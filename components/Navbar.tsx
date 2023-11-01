@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 interface props {
@@ -21,8 +22,10 @@ const Header = (props: props) => {
     {
       value: "en",
       label: (
-        <img
+        <Image
           className="w-6 h-4"
+          width={0}
+          height={0}
           src="https://vuongquocanh.com/wp-content/uploads/2018/04/la-co-vuong-quoc-anh.jpg"
           alt=""
         />
@@ -31,8 +34,10 @@ const Header = (props: props) => {
     {
       value: "vn",
       label: (
-        <img
+        <Image
           className="w-6 h-4"
+          width={0}
+          height={0}
           src="https://investone-law.com/wp-content/uploads/2019/06/quoc-ky-viet-nam.jpg"
           alt=""
         />
@@ -41,8 +46,10 @@ const Header = (props: props) => {
     {
       value: "ja",
       label: (
-        <img
+        <Image
           className="w-6 h-4"
+          width={0}
+          height={0}
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/225px-Flag_of_Japan.svg.png"
           alt=""
         />
@@ -50,42 +57,24 @@ const Header = (props: props) => {
     },
   ];
   return (
-    // <div className="bg-green-700 flex flex-row justify-between h-16 items-center">
-    //   <div
-    //     onClick={() => props.changePage("home")}
-    //     className="mx-5 flex flex-row items-center"
-    //   >
-    //     <Image src="/logo.svg" alt="logo" width={50} height={50} />
-    //     <h1 className=" text-yellow-300 mx-5">SMILE EYES CHARITY</h1>
-    //   </div>
-    //   <div className="flex flex-row justify-between gap-5 mx-5">
-    //     <a
-    //       onClick={() => props.changePage("home")}
-    //       className="text-lg text-white hover:text-yellow-300"
-    //       href="#project"
-    //     >
-    //       {props.t.PROJECT}
-    //     </a>
-    //     <a
-    //       onClick={() => props.changePage("home")}
-    //       className="text-lg text-white hover:text-yellow-300"
     <div className="bg-xanh-le flex flex-row justify-between p-4 items-center">
       <a
         onClick={() => props.changePage("home")}
         className="flex flex-row items-center gap-5 mx-5"
         href="#"
       >
-        <img src="/logo.svg" alt="logo" width={60} height={60} />
+        <Image src="/logo.svg" alt="logo" width={60} height={60} />
         <p className="text-vang-khe text-2xl">SMILE EYES CHARITY</p>
       </a>
       <div className="flex flex-row justify-between gap-5 mx-5">
-        <a
-          onClick={() => props.changePage("home")}
-          className="text-lg text-white hover:text-vang-khe"
-          href="#project"
-        >
-          {props.t.PROJECT}
-        </a>
+        <Link href="/">
+          <div
+            onClick={() => props.changePage("home")}
+            className="text-lg text-white hover:text-vang-khe"
+          >
+            {props.t.PROJECT}
+          </div>
+        </Link>
         <a
           onClick={() => props.changePage("home")}
           className="text-lg text-white hover:text-vang-khe"
@@ -93,16 +82,7 @@ const Header = (props: props) => {
         >
           {props.t.ACHIEVEMENT}
         </a>
-        {/* <a
-          onClick={() => props.changePage("home")}
-          className="text-lg text-white hover:text-yellow-300"
-          href="#blog"
-        >
-          {props.t.BLOG}
-        </a>
-        <a
-          onClick={() => props.changePage("home")}
-          className="text-lg text-white hover:text-yellow-300" */}
+
         <a
           onClick={() => props.changePage("home")}
           className="text-lg text-white hover:text-vang-khe"
@@ -117,18 +97,12 @@ const Header = (props: props) => {
         >
           {props.t.SPONSORS}
         </a>
-        {/* <a
-          onClick={() => props.changePage("about")}
-          className="text-lg text-white hover:text-yellow-300"
-          href="#"
-        > */}
-        <a
-          onClick={() => props.changePage("about")}
-          className="text-lg text-white hover:text-vang-khe"
-          href="#"
-        >
-          {props.t.QACONTACT}
-        </a>
+
+        <Link href="/about">
+          <div className="text-lg text-white hover:text-vang-khe">
+            {props.t.QACONTACT}
+          </div>
+        </Link>
         <div className="flex flex-row justify-center items-center">
           {flag.map((item, index) =>
             item.value === props.language ? (
