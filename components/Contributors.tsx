@@ -1,5 +1,6 @@
 import CardFounder from "./CardFounder";
 import CardSponsors from "./CardSponsors";
+import Image from "next/image";
 
 const Contributors = () => {
   return (
@@ -35,7 +36,7 @@ const Contributors = () => {
             href="#"
             className="flex flex-col items-center  bg-emerald-600  md:flex-row md:max-w-full hover:bg-green-600 rounded-lg dark:hover:bg-gray-700"
           >
-            <img
+            <Image
               className="object-cover w-full rounded-full h-96 md:h-auto md:w-60 mx-2 my-2"
               src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
               alt=""

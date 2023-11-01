@@ -5,6 +5,7 @@ import en from "@/components/locale/en";
 import vn from "@/components/locale/vn";
 import Header from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 const AboutPage = () => {
   const [language, setLanguage] = useState("en");
@@ -50,7 +51,7 @@ const AboutPage = () => {
             </h6>
             <div className="flex flex-row gap-5 justify-around my-5 py-10 bg-emerald-500">
               <div className="flex-1 flex flex-col items-center">
-                <img src="/imgVN.png" alt="" className="w-32 h-52" />
+                <Image src="/imgVN.png" alt="" className="w-32 h-52" />
                 <div className="text-center font-bold text-4xl my-5">
                   TẦM NHÌN
                 </div>
@@ -60,7 +61,7 @@ const AboutPage = () => {
                 </div>
               </div>
               <div className="flex-1 flex flex-col items-center">
-                <img src="/imgN.png" alt="" className="w-32 h-52" />
+                <Image src="/imgN.png" alt="" className="w-32 h-52" />
                 <div className="text-center font-bold text-4xl my-5">
                   SỨ MỆNH
                 </div>
@@ -70,7 +71,7 @@ const AboutPage = () => {
                 </div>
               </div>
               <div className="flex-1 flex flex-col items-center">
-                <img src="/imgKC.png" alt="" className="w-32 h-52" />
+                <Image src="/imgKC.png" alt="" className="w-32 h-52" />
                 <div className="text-center font-bold text-4xl my-5">
                   GIÁ TRỊ CỐT LÕI
                 </div>
@@ -121,8 +122,8 @@ const AboutPage = () => {
                     ></input>
                   </div>
                   <label
-                    for="message"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    htmlFor="message"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Your message
                   </label>

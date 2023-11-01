@@ -16,6 +16,7 @@
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.17.0",
     "redux": "^4.2.1",
+    "sharp": "^0.32.6",
     "video-react": "^0.16.0"
   },
   "devDependencies": {

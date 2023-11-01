@@ -22,7 +22,7 @@ const Header = (props: props) => {
     {
       value: "en",
       label: (
-        <img
+        <Image
           className="w-6 h-4"
           src="https://vuongquocanh.com/wp-content/uploads/2018/04/la-co-vuong-quoc-anh.jpg"
           alt=""
@@ -32,7 +32,7 @@ const Header = (props: props) => {
     {
       value: "vn",
       label: (
-        <img
+        <Image
           className="w-6 h-4"
           src="https://investone-law.com/wp-content/uploads/2019/06/quoc-ky-viet-nam.jpg"
           alt=""
@@ -42,7 +42,7 @@ const Header = (props: props) => {
     {
       value: "ja",
       label: (
-        <img
+        <Image
           className="w-6 h-4"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/225px-Flag_of_Japan.svg.png"
           alt=""
@@ -57,7 +57,7 @@ const Header = (props: props) => {
         className="flex flex-row items-center gap-5 mx-5"
         href="#"
       >
-        <img src="/logo.svg" alt="logo" width={60} height={60} />
+        <Image src="/logo.svg" alt="logo" width={60} height={60} />
         <p className="text-vang-khe text-2xl">SMILE EYES CHARITY</p>
       </a>
       <div className="flex flex-row justify-between gap-5 mx-5">

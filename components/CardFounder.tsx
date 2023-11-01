@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const CardFounder = () => {
   return (
     <div className=" border border-gray-200 dark:border-gray-700 dark:bg-gray-800 max-w-fit rounded-lg shadow">
@@ -5,7 +7,7 @@ const CardFounder = () => {
         href="#"
         className="flex flex-col items-center  bg-green-500  md:flex-row md:max-w-xl hover:bg-green-400  dark:hover:bg-gray-700"
       >
-        <img
+        <Image
           className="object-cover w-full rounded-full h-60 md:h-auto md:w-28 mx-2 my-2"
           src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
           alt=""
