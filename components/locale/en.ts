@@ -1,4 +1,5 @@
 const FIXED_ENGLISH_WORD = {
+  PROGRAM_SRC: "ttps://www.youtube.com/embed/7sx0r5rmI9M?si=oeFmoJXkahAnWHz6",
   PROJECT: "Project",
   ACHIEVEMENT: "Achievements",
   BLOG: "Blog",

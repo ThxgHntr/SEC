@@ -1,4 +1,5 @@
 const FIXED_JAPANESE_WORD = {
+  PROGRAM_SRC: "https://www.youtube.com/embed/aAqwxCyBdRE?si=JMku9plZsV1HDoMQ",
   PROJECT: "プロジェクト",
   ACHIEVEMENT: "成果",
   BLOG: "ブログ",

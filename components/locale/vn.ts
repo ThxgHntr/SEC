@@ -1,4 +1,5 @@
 const FIXED_VIETNAMESE_WORD = {
+  PROGRAM_SRC: "https://www.youtube.com/embed/543jwFfCZvg?si=cD45b_uwE2PplHSP",
   PROJECT: "Dự án",
   PROJECT_NAME:
     "PHÁT TRIỂN CỤM DÂN CƯ PÀ-CĂNG MỚI, THÔN PÀ ONG, XÃ CÀ DY, HUYỆN NAM GIANG",
@@ -9,8 +10,6 @@ const FIXED_VIETNAMESE_WORD = {
   SPONSORS: "Đối tác",
   QACONTACT: "Q&A & Liên hệ",
   PROGRESS: "Tiến độ",
-  NAMEPROJECT:
-    "PHÁT TRIỂN CỤM DÂN CƯ PÀ-CĂNG MỚI, THÔN PÀ ONG, XÃ CÀ DY, HUYỆN NAM GIANG",
   LOCATION: "Xã Cà-Dy, huyện Nam Giang, tỉnh Quảng Nam",
   BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR: "Trở thành người tham gia hoặc đối tác",
   DETAILS: "Chi tiết",
