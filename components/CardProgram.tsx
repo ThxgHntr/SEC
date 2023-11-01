@@ -1,7 +1,12 @@
 import { IoCalendarOutline } from "react-icons/io5";
 import { CiShare1 } from "react-icons/ci";
 
-const CardProgram = () => {
+interface Props {
+  src: any;
+  text: String;
+}
+
+const CardProgram = (props: Props) => {
   return (
     <div className="shadow-lg border border-gray-200 bg-white rounded-lg mt-5 my-3">
       <div className="flex flex-col gap-2">
@@ -15,15 +20,14 @@ const CardProgram = () => {
         <iframe
           width="auto"
           height="315"
-          src="https://www.youtube.com/embed/543jwFfCZvg?si=qPcHutduGIYha_68"
+          src={props.src}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         ></iframe>
         <div className="flex flex-col content-start w-auto p-5 gap-3">
           <div>
             <p className="text-base">
-              Description shdgajhd dáhjgda ádjgdjahs djasgdasjbd jasgd
-              ádjasgdajs duiassgdasj
+              {props.text?.slice(0, 150) + '...'}
             </p>
           </div>
           <div className="flex flex-row-reverse w-full">

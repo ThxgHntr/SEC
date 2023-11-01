@@ -47,7 +47,7 @@ export default function Home() {
       <div className="mt-5">
         <div>
           <Homepage t={t} />
-          <Content />
+          <Content t={t}/>
           <Completed />
           <Blog />
           <Contributors />
