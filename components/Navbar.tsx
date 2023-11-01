@@ -61,13 +61,14 @@ const Header = (props: props) => {
         <p className="text-vang-khe text-2xl">SMILE EYES CHARITY</p>
       </a>
       <div className="flex flex-row justify-between gap-5 mx-5">
-        <a
-          onClick={() => props.changePage("home")}
-          className="text-lg text-white hover:text-vang-khe"
-          href="#project"
-        >
-          {props.t.PROJECT}
-        </a>
+        <Link href="/">
+          <div
+            onClick={() => props.changePage("home")}
+            className="text-lg text-white hover:text-vang-khe"
+          >
+            {props.t.PROJECT}
+          </div>
+        </Link>
         <a
           onClick={() => props.changePage("home")}
           className="text-lg text-white hover:text-vang-khe"
