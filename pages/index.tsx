@@ -45,20 +45,14 @@ export default function Home() {
         />
       </div>
       <div className="mt-5">
-        {page !== "about" ? (
-          <div>
-            <Homepage t={t} />
-            <Content />
-            <Completed />
-            <Blog />
-            <Contributors />
-            <Contact />
-          </div>
-        ) : (
-          <div>
-            <AboutPage />
-          </div>
-        )}
+        <div>
+          <Homepage t={t} />
+          <Content />
+          <Completed />
+          <Blog />
+          <Contributors />
+          <Contact />
+        </div>
 
         <Footer />
       </div>
