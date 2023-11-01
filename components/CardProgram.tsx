@@ -35,18 +35,19 @@ const CardProgram = () => {
             <a href="#">Details</a>
           </div>
           <div className="flex flex-col gap-4">
-            <div className="flex flex-row gap-10">
-              <span>Project:</span>
-              <span>40%</span>
+            <div className="flex flex-col gap-4">
+              <div className="flex justify-between">
+                <span>Project:</span>
+                <span>40%</span>
+              </div>
+              <div className="w-full bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="bg-vang-khe h-2.5 rounded-full"
+                  style={{ width: "40%" }}
+                />
+              </div>
             </div>
-
-            <div className="w-full bg-gray-200 rounded-full h-2.5 ">
-              <div
-                className="bg-vang-khe h-2.5 rounded-full"
-                style={{ width: "40%" }}
-              />
-            </div>
-            <button className="bg-hong-bede rounded-lg p-2 font-bold">
+            <button className="bg-hong-bede rounded-lg p-2 font-bold hover:bg-hong-bede/[0.75]">
               Be a contributor OR SPONSOR
             </button>
           </div>

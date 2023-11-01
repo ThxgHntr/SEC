@@ -140,7 +140,7 @@ const Header = (props: props) => {
           <select
             name="language"
             id="language"
-            className="w-7/12 bg-transparent text-white hover:cursor-pointer hover:text-vang-khe"
+            className="min-w-fit bg-transparent text-white hover:cursor-pointer hover:text-vang-khe"
             onChange={(e) => props.setLanguage(e.target.value)}
             value={props.language}
           >

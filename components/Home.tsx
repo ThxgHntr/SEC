@@ -6,10 +6,10 @@ interface Props {
   t: any;
 }
 
-const Homepage = (t: Props) => {
+const Homepage = (props: Props) => {
   return (
     <div className="mx-auto p-2 w-full max-w-7xl">
-      <p className="text-5xl font-bold text-center mb-3">{t.t.NAMEPROJECT}</p>
+      <p className="text-5xl font-bold text-center mb-3">{props.t.PROJECT_NAME}</p>
       <div className="flex justify-between">
         <div className="flex flex-row items-center justify-center order-first gap-2">
           <IoCalendarOutline className="w-10 h-10" />
@@ -20,49 +20,46 @@ const Homepage = (t: Props) => {
         </div>
       </div>
       <div className="shadow-2xl border border-gray-200 bg-white rounded-lg mt-5 my-3">
-        <div className="flex flex-row gap-5">
+        <div className="flex flex-row gap-3">
           <iframe
             className="w-10/12 rounded-l-lg"
-            height={450}
+            height="full"
             src="https://www.youtube.com/embed/543jwFfCZvg?si=qPcHutduGIYha_68"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
-          <div className="flex flex-col justify-between p-4">
-            <div>
-              <p className="text-3xl font-bold">Project name</p>
-              <p className="text-base">
-                Description shdgajhd dáhjgda ádjgdjahs djasgdasjbd jasgd
-                ádjasgdajs duiassgdasj
-              </p>
-            </div>
+          <div className="flex flex-col justify-between gap-4 p-4 w-7/12">
+            <p className="text-2xl">
+                {props.t.DESCRIPTION}
+            </p>
             <div className="flex flex-row-reverse w-full">
               <CiShare1 className=" w-6 h-6" />
             </div>
-            <div className="flex flex-row justify-between my-2">
+            <div className="flex flex-row justify-between text-xl my-2">
               <a className="font-bold underline" href="#">
-                {t.t.DETAILS}
+                {props.t.DETAILS}
               </a>
               <a className="font-bold underline" href="#">
-                {t.t.PLAN}
+                {props.t.PLAN}
               </a>
-              <a href="#">Details</a>
+              <a href="#">{props.t.DETAILS}</a>
             </div>
             <div>
-              <div className="flex flex-row gap-10 my-2">
-                <span>{t.t.PROJECT}:</span>
-                <span>40%</span>
-              </div>
-
-              <div className="w-full bg-gray-200 rounded-full h-2.5">
-                <div
-                  className="bg-vang-khe h-2.5 rounded-full"
-                  style={{ width: "40%" }}
-                />
+              <div className="flex flex-col gap-4">
+                <div className="flex justify-between">
+                  <span>{props.t.PROGRESS}:</span>
+                  <span>40%</span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    className="bg-vang-khe h-2.5 rounded-full"
+                    style={{ width: "40%" }}
+                  />
+                </div>
               </div>
             </div>
-            <button className="bg-hong-bede rounded-lg p-2 font-bold">
-              <div>{t.t.BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR}</div>
+            <button className="bg-hong-bede rounded-lg p-2 font-bold hover:bg-hong-bede/[0.75]">
+              <div>{props.t.BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR}</div>
             </button>
           </div>
         </div>
