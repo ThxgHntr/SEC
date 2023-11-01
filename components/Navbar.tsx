@@ -24,6 +24,8 @@ const Header = (props: props) => {
       label: (
         <Image
           className="w-6 h-4"
+          width={0}
+          height={0}
           src="https://vuongquocanh.com/wp-content/uploads/2018/04/la-co-vuong-quoc-anh.jpg"
           alt=""
         />
@@ -34,6 +36,8 @@ const Header = (props: props) => {
       label: (
         <Image
           className="w-6 h-4"
+          width={0}
+          height={0}
           src="https://investone-law.com/wp-content/uploads/2019/06/quoc-ky-viet-nam.jpg"
           alt=""
         />
@@ -44,6 +48,8 @@ const Header = (props: props) => {
       label: (
         <Image
           className="w-6 h-4"
+          width={0}
+          height={0}
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/225px-Flag_of_Japan.svg.png"
           alt=""
         />

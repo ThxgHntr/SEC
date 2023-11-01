@@ -5,7 +5,11 @@ const CardMore = () => {
   return (
     <div className="shadow-lg bg-white flex flex-row w-full h-full rounded-lg ">
       <div className="relative overflow-hidden object-cover w-full rounded-l-lg h-full">
-        <Image src={image} alt="image" fill loading="lazy" />
+        <Image width={0}
+          height={0}
+          src={image}
+          alt="image"
+          fill loading="lazy" />
       </div>
       <div className="flex flex-col justify-between p-4 leading-normal">
         <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900">

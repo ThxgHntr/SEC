@@ -21,7 +21,9 @@ const CardBlog = () => {
             className="m-0 rounded-none"
           >
             <Image
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+              width={0}
+              height={0}
+              src="https://i1.wp.com/www.digital38.com.vn/wp-content/uploads/2021/01/nhiep-anh-gia-chanh-nguyen.-1.jpg"
               alt="ui/ux review check"
               loading="lazy"
             />

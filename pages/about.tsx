@@ -51,7 +51,7 @@ const AboutPage = () => {
             </h6>
             <div className="flex flex-row gap-5 justify-around my-5 py-10 bg-emerald-500">
               <div className="flex-1 flex flex-col items-center">
-                <Image src="/imgVN.png" alt="" className="w-32 h-52" />
+                <Image src="/imgVN.png" alt="" className="w-32 h-52" width={0} height={0} />
                 <div className="text-center font-bold text-4xl my-5">
                   TẦM NHÌN
                 </div>
@@ -61,7 +61,7 @@ const AboutPage = () => {
                 </div>
               </div>
               <div className="flex-1 flex flex-col items-center">
-                <Image src="/imgN.png" alt="" className="w-32 h-52" />
+                <Image src="/imgN.png" alt="" className="w-32 h-52" width={0} height={0} />
                 <div className="text-center font-bold text-4xl my-5">
                   SỨ MỆNH
                 </div>
@@ -71,7 +71,7 @@ const AboutPage = () => {
                 </div>
               </div>
               <div className="flex-1 flex flex-col items-center">
-                <Image src="/imgKC.png" alt="" className="w-32 h-52" />
+                <Image src="/imgKC.png" alt="" className="w-32 h-52" width={0} height={0} />
                 <div className="text-center font-bold text-4xl my-5">
                   GIÁ TRỊ CỐT LÕI
                 </div>
