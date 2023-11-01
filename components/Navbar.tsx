@@ -14,8 +14,8 @@ const Header = (props: props) => {
       value: "en",
       label: "English",
     },
-    { value: "vn", label: "Vietnamese" },
-    { value: "ja", label: "Japanese" },
+    { value: "vn", label: "Tiếng việt" },
+    { value: "ja", label: "日本語" },
   ];
   const flag = [
     {
