@@ -1,5 +1,5 @@
 const FIXED_VIETNAMESE_WORD = {
-  PROJECT: "Dự án",
+  PROJECT: "Dự án",
   PROJECT_NAME:
     "PHÁT TRIỂN CỤM DÂN CƯ PÀ-CĂNG MỚI, THÔN PÀ ONG, XÃ CÀ DY, HUYỆN NAM GIANG",
   ACHIEVEMENT: "Thành tựu",
