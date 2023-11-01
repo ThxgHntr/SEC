@@ -6,6 +6,7 @@ import en from "@/components/locale/en";
 import vn from "@/components/locale/vn";
 import AboutPage from "./about";
 import Header from "@/components/Navbar";
+import Head from "next/head";
 import Homepage from "@/components/Home";
 import Content from "@/components/Content";
 import Completed from "@/components/Completed";
@@ -35,27 +36,33 @@ export default function Home() {
     setPage(e);
   };
   return (
-    <div className="bg-white dark:text-black">
-      <div className="sticky top-0 z-50">
-        <Header
-          language={language}
-          setLanguage={changeLanguage}
-          t={t}
-          changePage={changePage}
-        />
-      </div>
-      <div className="mt-5">
-        <div>
-          <Homepage t={t} />
-          <Content t={t}/>
-          <Completed />
-          <Blog />
-          <Contributors />
-          <Contact />
+    <>
+      <Head>
+        <title>Smile Eyes Charity</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <div className="bg-white dark:text-black">
+        <div className="sticky top-0 z-50">
+          <Header
+            language={language}
+            setLanguage={changeLanguage}
+            t={t}
+            changePage={changePage}
+          />
         </div>
+        <div className="mt-5">
+          <div>
+            <Homepage t={t} />
+            <Content t={t} />
+            <Completed />
+            <Blog />
+            <Contributors />
+            <Contact />
+          </div>
 
-        <Footer />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
