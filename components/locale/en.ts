@@ -8,7 +8,7 @@ const FIXED_ENGLISH_WORD = {
   QACONTACT: "Q&A & Contact",
   PROGRESS: "Progress",
   PROJECT_NAME:
-    "New Pa Cang residential cluster of Co Tu people in Ca Dy commune, Nam Giang district",
+    "DEVELOPMENT OF NEW PA-CANG RESIDENTIAL CLUSTER, PA ONG VILLAGE, CA DY COMMUNE, NAM GIANG DISTRICT",
   LOCATION: "Cà-Dy commune, Nam Giang disctrict, Quảng Nam province",
   BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR: "Be the Contributor or Sponsor",
   DETAILS: "Details",
