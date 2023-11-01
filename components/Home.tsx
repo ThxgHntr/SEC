@@ -24,7 +24,7 @@ const Homepage = (props: Props) => {
           <iframe
             className="w-10/12 rounded-l-lg"
             height="full"
-            src="https://www.youtube.com/embed/543jwFfCZvg?si=qPcHutduGIYha_68"
+            src={props.t.PROGRAM_SRC}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
