@@ -7,7 +7,7 @@ const FIXED_JAPANESE_WORD = {
   SPONSORS: "スポンサー",
   QACONTACT: "Q&A & お問い合わせ",
   PROGRESS: "進捗",
-  NAMEPROJECT: "ナムザン地区カディコミューンのコトゥ族の新しいパチャン住宅群",
+  PROJECT_NAME: "ナムザン地区カディコミューンのコトゥ族の新しいパチャン住宅群",
   LOCATION: "クアンナム省ナムザン地区Ca-Dyコミューン",
   BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR:
     "コントリビューターまたはスポンサーになる",
