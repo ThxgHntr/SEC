@@ -9,6 +9,7 @@ const FIXED_VIETNAMESE_WORD = {
     "PHÁT TRIỂN CỤM DÂN CƯ PÀ-CĂNG MỚI, THÔN PÀ ONG, XÃ CÀ DY, HUYỆN NAM GIANG",
   ACHIEVEMENT: "Thành tựu",
   BLOG: "Blog",
+  INCOMING_PROJECTS: "Các dự án sắp tới",
   CONTRIBUTORS: "Người tham gia",
   CONTACT: "Liên hệ",
   SPONSORS: "Đối tác",

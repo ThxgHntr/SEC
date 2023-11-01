@@ -2,6 +2,7 @@ import { IoCalendarOutline } from "react-icons/io5";
 import { CiShare1 } from "react-icons/ci";
 
 interface Props {
+  t: any;
   src: any;
   text: String;
 }
@@ -34,9 +35,9 @@ const CardProgram = (props: Props) => {
             <CiShare1 className=" w-6 h-6" />
           </div>
           <div className="flex flex-row justify-between">
-            <a href="#">Details</a>
-            <a href="#">Details</a>
-            <a href="#">Details</a>
+            <a href="#">{props.t.DETAILS}</a>
+            <a href="#">{props.t.PLAN}</a>
+            <a href="#">{props.t.DETAILS}</a>
           </div>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-4">
@@ -52,7 +53,7 @@ const CardProgram = (props: Props) => {
               </div>
             </div>
             <button className="bg-hong-bede rounded-lg p-2 font-bold hover:bg-hong-bede/[0.75]">
-              Be a contributor OR SPONSOR
+              {props.t.BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR}
             </button>
           </div>
         </div>
