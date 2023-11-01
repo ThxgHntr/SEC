@@ -13,7 +13,6 @@ const CardSponsors = () => {
         height={0}
         src="https://i1.wp.com/www.digital38.com.vn/wp-content/uploads/2021/01/nhiep-anh-gia-chanh-nguyen.-1.jpg"
         alt=""
-        loading="lazy"
       />
       <div className="flex flex-col justify-between p-4 leading-normal">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

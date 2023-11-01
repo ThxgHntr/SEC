@@ -25,7 +25,6 @@ const CardBlog = () => {
               height={0}
               src="https://i1.wp.com/www.digital38.com.vn/wp-content/uploads/2021/01/nhiep-anh-gia-chanh-nguyen.-1.jpg"
               alt="ui/ux review check"
-              loading="lazy"
             />
           </CardHeader>
           <CardBody>
