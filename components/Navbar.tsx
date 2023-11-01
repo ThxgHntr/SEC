@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 interface props {
@@ -50,25 +51,6 @@ const Header = (props: props) => {
     },
   ];
   return (
-    // <div className="bg-green-700 flex flex-row justify-between h-16 items-center">
-    //   <div
-    //     onClick={() => props.changePage("home")}
-    //     className="mx-5 flex flex-row items-center"
-    //   >
-    //     <Image src="/logo.svg" alt="logo" width={50} height={50} />
-    //     <h1 className=" text-yellow-300 mx-5">SMILE EYES CHARITY</h1>
-    //   </div>
-    //   <div className="flex flex-row justify-between gap-5 mx-5">
-    //     <a
-    //       onClick={() => props.changePage("home")}
-    //       className="text-lg text-white hover:text-yellow-300"
-    //       href="#project"
-    //     >
-    //       {props.t.PROJECT}
-    //     </a>
-    //     <a
-    //       onClick={() => props.changePage("home")}
-    //       className="text-lg text-white hover:text-yellow-300"
     <div className="bg-xanh-le flex flex-row justify-between p-4 items-center">
       <a
         onClick={() => props.changePage("home")}
@@ -93,16 +75,7 @@ const Header = (props: props) => {
         >
           {props.t.ACHIEVEMENT}
         </a>
-        {/* <a
-          onClick={() => props.changePage("home")}
-          className="text-lg text-white hover:text-yellow-300"
-          href="#blog"
-        >
-          {props.t.BLOG}
-        </a>
-        <a
-          onClick={() => props.changePage("home")}
-          className="text-lg text-white hover:text-yellow-300" */}
+
         <a
           onClick={() => props.changePage("home")}
           className="text-lg text-white hover:text-vang-khe"
@@ -117,18 +90,12 @@ const Header = (props: props) => {
         >
           {props.t.SPONSORS}
         </a>
-        {/* <a
-          onClick={() => props.changePage("about")}
-          className="text-lg text-white hover:text-yellow-300"
-          href="#"
-        > */}
-        <a
-          onClick={() => props.changePage("about")}
-          className="text-lg text-white hover:text-vang-khe"
-          href="#"
-        >
-          {props.t.QACONTACT}
-        </a>
+
+        <Link href="/about">
+          <div className="text-lg text-white hover:text-vang-khe">
+            {props.t.QACONTACT}
+          </div>
+        </Link>
         <div className="flex flex-row justify-center items-center">
           {flag.map((item, index) =>
             item.value === props.language ? (
