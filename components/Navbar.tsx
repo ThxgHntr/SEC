@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import SelectL from "./selectL";
 
 interface props {
   language: string;
-  setLanguage: any;
+  setLanguage(e: any): void;
   t: any;
   changePage: any;
 }
@@ -70,14 +71,14 @@ const Header = (props: props) => {
         <Link href="/">
           <div
             onClick={() => props.changePage("home")}
-            className="text-lg text-white hover:text-vang-khe"
+            className="text-lg pt-1 text-white hover:text-vang-khe"
           >
             {props.t.PROJECT}
           </div>
         </Link>
         <a
           onClick={() => props.changePage("home")}
-          className="text-lg text-white hover:text-vang-khe"
+          className="text-lg pt-1 text-white hover:text-vang-khe"
           href="#achievements"
         >
           {props.t.ACHIEVEMENT}
@@ -85,50 +86,25 @@ const Header = (props: props) => {
 
         <a
           onClick={() => props.changePage("home")}
-          className="text-lg text-white hover:text-vang-khe"
+          className="text-lg pt-1 text-white hover:text-vang-khe"
           href="#blog"
         >
           {props.t.BLOG}
         </a>
         <a
           onClick={() => props.changePage("home")}
-          className="text-lg text-white hover:text-vang-khe"
+          className="text-lg pt-1 text-white hover:text-vang-khe"
           href="#sponsors"
         >
           {props.t.SPONSORS}
         </a>
 
         <Link href="/about">
-          <div className="text-lg text-white hover:text-vang-khe">
+          <div className="text-lg pt-1 text-white hover:text-vang-khe">
             {props.t.QACONTACT}
           </div>
         </Link>
-        <div className="flex flex-row justify-center items-center">
-          {flag.map((item, index) =>
-            item.value === props.language ? (
-              <span key={index}>{item.label}</span>
-            ) : (
-              <span key={index}></span>
-            )
-          )}
-          <select
-            name="language"
-            id="language"
-            className="min-w-fit bg-transparent text-white hover:cursor-pointer hover:text-vang-khe"
-            onChange={(e) => props.setLanguage(e.target.value)}
-            value={props.language}
-          >
-            {option.map((item, index) => (
-              <option
-                key={index}
-                className="align-middle text-black"
-                value={item.value}
-              >
-                {item.label}
-              </option>
-            ))}
-          </select>
-        </div>
+        <SelectL language={props.language} setLanguage={props.setLanguage} />
       </div>
     </div>
   );

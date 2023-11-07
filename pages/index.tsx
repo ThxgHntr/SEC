@@ -17,15 +17,15 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState("GB");
   const [t, setT] = useState(en);
   const [page, setPage] = useState("home");
   const changeLanguage = (e: any) => {
     setLanguage(e);
-    if (e === "ja") {
+    if (e === "JP") {
       setT(ja);
     } else {
-      if (e === "en") {
+      if (e === "GB") {
         setT(en);
       } else {
         setT(vn);
