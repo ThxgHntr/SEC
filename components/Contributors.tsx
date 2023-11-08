@@ -6,11 +6,11 @@ import Url from "../public/founder.jpg";
 const Contributors = () => {
   return (
     <div className="mx-auto my-0 w-full max-w-7xl z-0">
-      <h1 className="text-4xl font-bold text-center my-5 pt-10">
+      <p className="text-4xl font-bold text-center my-5 pt-10">
         Contributors
-      </h1>
+      </p>
       <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded"></hr>
-      <h1 className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">VOLUNTEERS</h1>
+      <p className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">VOLUNTEERS</p>
       <div className="flex flex-col gap-4 m-12">
         <div className="flex flex-row gap-2">
           <CardVolunteer />
@@ -23,16 +23,16 @@ const Contributors = () => {
           <CardVolunteer />
         </div>
       </div>
-      <h1 className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">
+      <p className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">
         SPONSORS
-      </h1>
+      </p>
       <div className="flex flex-row gap-4 m-12">
         <CardSponsors />
         <CardSponsors />
         <CardSponsors />
         <CardSponsors />
       </div>
-      <h1 className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">FOUNDER</h1>
+      <p className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">FOUNDER</p>
       <div className="m-3">
         <a
           className="flex flex-row items-center"
