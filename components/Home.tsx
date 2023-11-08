@@ -44,11 +44,16 @@ const Homepage = (props: Props) => {
               >
                 {props.t.DETAILS}
               </a>
-              <a className="font-bold underline" href="#">
+              <a
+                target="_blank"
+                className="font-bold underline"
+                href={props.t.PROJECT_PLAN_LINK}
+              >
                 {props.t.PLAN}
               </a>
-              <div>
+              <div className="flex flex-row gap-2">
                 <FcLike className="w-6 h-6" />
+                325
               </div>
             </div>
             <div>

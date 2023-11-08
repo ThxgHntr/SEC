@@ -18,6 +18,7 @@ const Content = (props: Props) => {
           text={props.t.PROJECT1_DETAILS}
           title={props.t.PROJECT1_NAME}
           link={props.t.PROJECT1_LINK}
+          link_plan={props.t.PROJECT_PLAN_LINK}
         />
         <CardProgram
           t={props.t}
@@ -25,6 +26,7 @@ const Content = (props: Props) => {
           text={props.t.PROJECT2_DETAILS}
           title={props.t.PROJECT2_NAME}
           link={props.t.PROJECT2_LINK}
+          link_plan={props.t.PROJECT_PLAN_LINK}
         />
       </div>
     </div>

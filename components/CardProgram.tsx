@@ -8,6 +8,7 @@ interface Props {
   text: String;
   title?: String;
   link: any;
+  link_plan?: any;
 }
 
 const CardProgram = (props: Props) => {
@@ -39,9 +40,12 @@ const CardProgram = (props: Props) => {
             <a className="underline" target="_blank" href={props.link}>
               {props.t.DETAILS}
             </a>
-            <a href="#">{props.t.PLAN}</a>
-            <div>
+            <a target="_blank" href={props.link_plan} className="underline">
+              {props.t.PLAN}
+            </a>
+            <div className="flex flex-row gap-2">
               <FcLike className="w-6 h-6" />
+              296
             </div>
           </div>
           <div className="flex flex-col gap-4">

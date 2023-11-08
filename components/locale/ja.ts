@@ -28,6 +28,10 @@ const FIXED_JAPANESE_WORD = {
   PROJECT1_NAME:
     "コトゥー民族の村における植物園や畜産園モデル構築するためのサポート",
   PROJECT2_NAME: "コトゥ族のパチャン村に有機肥料生産工場を建設するプロジェクト",
+  PROJECT1_LINK: "/Project1JP.pdf",
+  PROJECT2_LINK: "/Project2JP.pdf",
+  PROJECT_PLAN_LINK:
+    "https://drive.google.com/file/d/1byiu9-M1lJBL7SB0ZVcouB4EmI4AnP0x/view?usp=drive_link",
 };
 
 export default FIXED_JAPANESE_WORD;
