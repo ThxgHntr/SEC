@@ -11,7 +11,7 @@ interface props {
 
 const Header = (props: props) => {
   return (
-    <div className="bg-xanh-le flex flex-row justify-between p-4 items-center ">
+    <div className="bg-xanh-le flex flex-row justify-between p-4 items-center z-10 ">
       <a className="flex flex-row items-center gap-5 mx-5" href="#">
         <Image src="/logo.svg" alt="logo" width={60} height={60} />
         <p className="text-vang-khe text-2xl">SMILE EYES CHARITY</p>

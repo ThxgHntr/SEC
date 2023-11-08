@@ -5,7 +5,7 @@ import Url from "../public/founder.jpg";
 
 const Contributors = () => {
   return (
-    <div className="mx-auto my-0 w-full max-w-7xl">
+    <div className="mx-auto my-0 w-full max-w-7xl z-0">
       <h1 className="text-4xl font-bold text-center my-5 pt-10">
         Contributors
       </h1>

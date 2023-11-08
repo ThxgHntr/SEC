@@ -13,11 +13,12 @@ import Blog from "@/components/Blog";
 import Contributors from "@/components/Contributors";
 import Footer from "@/components/Footer";
 import React from "react";
+import Modal from "@/components/Modal";
 
 export default function Home() {
   const [language, setLanguage] = useState("GB");
   const [t, setT] = useState(en);
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [modalIsOpen, setIsOpen] = React.useState(true);
   const changeLanguage = (e: any) => {
     setLanguage(e);
     if (e === "JP") {
@@ -32,6 +33,9 @@ export default function Home() {
   };
   return (
     <>
+      <div className="z-20">
+        <Modal modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
+      </div>
       <div className="w-full">
         <Head>
           <title>Smile Eyes Charity</title>
@@ -41,7 +45,7 @@ export default function Home() {
           />
         </Head>
         <div className="bg-white dark:text-black">
-          <div className="sticky top-0 z-30">
+          <div className="sticky top-0 z-10">
             <Header language={language} setLanguage={changeLanguage} t={t} />
           </div>
           <div className="mt-5">
