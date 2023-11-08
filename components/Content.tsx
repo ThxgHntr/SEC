@@ -11,8 +11,8 @@ const Content = (props: Props) => {
       <p className="text-4xl font-bold text-center my-5 pt-10">
         {props.t.INCOMING_PROJECTS}
       </p>
-      <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded md:my-10"></hr>
-      <div className="flex flex-row justify-between mx-3 my-3 gap-5">
+      <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded"></hr>
+      <div className="flex flex-row justify-between m-3 gap-5">
         <CardProgram
           t={props.t}
           src={props.t.PROJECT1}

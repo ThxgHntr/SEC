@@ -3,7 +3,7 @@ import Url from "../public/founder.jpg";
 
 const CardVolunteer = () => {
   return (
-    <div className="flex flex-row border-gray-200  max-w-fit rounded-lg shadow-lg">
+    <div className="flex flex-row max-w-fit rounded-lg shadow-lg">
       <Image
         className="object-cover rounded-l-lg"
         style={{ objectFit: "cover", width: "30%", height: "100%" }}
