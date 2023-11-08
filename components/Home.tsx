@@ -1,6 +1,7 @@
 import React from "react";
 import { IoCalendarOutline } from "react-icons/io5";
 import { CiLocationOn, CiShare1 } from "react-icons/ci";
+import { FcLike } from "react-icons/fc";
 
 interface Props {
   t: any;
@@ -9,7 +10,9 @@ interface Props {
 const Homepage = (props: Props) => {
   return (
     <div className="mx-auto p-2 w-full max-w-7xl">
-      <p className="text-5xl font-bold text-center mb-3">{props.t.PROJECT_NAME}</p>
+      <p className="text-5xl font-bold text-center mb-3">
+        {props.t.PROJECT_NAME}
+      </p>
       <div className="flex justify-between">
         <div className="flex flex-row items-center justify-center order-first gap-2">
           <IoCalendarOutline className="w-10 h-10" />
@@ -29,9 +32,7 @@ const Homepage = (props: Props) => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
           <div className="flex flex-col justify-between gap-4 p-4 w-7/12">
-            <p className="text-2xl">
-                {props.t.DESCRIPTION}
-            </p>
+            <p className="text-2xl">{props.t.DESCRIPTION}</p>
             <div className="flex flex-row-reverse w-full">
               <CiShare1 className=" w-6 h-6" />
             </div>
@@ -42,7 +43,9 @@ const Homepage = (props: Props) => {
               <a className="font-bold underline" href="#">
                 {props.t.PLAN}
               </a>
-              <a href="#">{props.t.DETAILS}</a>
+              <div>
+                <FcLike className="w-6 h-6" />
+              </div>
             </div>
             <div>
               <div className="flex flex-col gap-4">

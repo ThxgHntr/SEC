@@ -1,10 +1,6 @@
-import Image from "next/image";
-import image from "../public/image.png";
 import {
-  Button,
   Card,
   CardBody,
-  CardFooter,
   CardHeader,
   Typography,
 } from "@material-tailwind/react";
@@ -20,9 +16,7 @@ const CardBlog = () => {
             color="transparent"
             className="m-0 rounded-none"
           >
-            <Image
-              width={0}
-              height={0}
+            <img
               src="https://i1.wp.com/www.digital38.com.vn/wp-content/uploads/2021/01/nhiep-anh-gia-chanh-nguyen.-1.jpg"
               alt="ui/ux review check"
             />

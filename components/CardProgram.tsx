@@ -1,5 +1,6 @@
 import { IoCalendarOutline } from "react-icons/io5";
 import { CiShare1 } from "react-icons/ci";
+import { FcLike } from "react-icons/fc";
 
 interface Props {
   t: any;
@@ -27,9 +28,7 @@ const CardProgram = (props: Props) => {
         ></iframe>
         <div className="flex flex-col content-start w-auto p-5 gap-3">
           <div>
-            <p className="text-base">
-              {props.text?.slice(0, 150) + '...'}
-            </p>
+            <p className="text-base">{props.text?.slice(0, 150) + "..."}</p>
           </div>
           <div className="flex flex-row-reverse w-full">
             <CiShare1 className=" w-6 h-6" />
@@ -37,7 +36,9 @@ const CardProgram = (props: Props) => {
           <div className="flex flex-row justify-between">
             <a href="#">{props.t.DETAILS}</a>
             <a href="#">{props.t.PLAN}</a>
-            <a href="#">{props.t.DETAILS}</a>
+            <div>
+              <FcLike className="w-6 h-6" />
+            </div>
           </div>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-4">

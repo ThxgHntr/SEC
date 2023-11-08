@@ -1,5 +1,6 @@
 import { IoCalendarOutline } from "react-icons/io5";
 import { CiShare1 } from "react-icons/ci";
+import { FcLike } from "react-icons/fc";
 
 const CardCompleted = () => {
   return (
@@ -22,8 +23,8 @@ const CardCompleted = () => {
         <div className="flex flex-col content-start w-auto p-5 gap-3">
           <div>
             <p className="text-base">
-              Description shdgajhd dáhjgda ádjgdjahs djasgdasjbd jasgd ádjasgdajs
-              duiassgdasj
+              Description shdgajhd dáhjgda ádjgdjahs djasgdasjbd jasgd
+              ádjasgdajs duiassgdasj
             </p>
           </div>
           <div className="flex flex-row-reverse w-full">
@@ -32,7 +33,9 @@ const CardCompleted = () => {
           <div className="flex flex-row justify-between">
             <a href="#">Details</a>
             <a href="#">Details</a>
-            <a href="#">Details</a>
+            <div>
+              <FcLike className="w-6 h-6" />
+            </div>
           </div>
           <div className="flex flex-col gap-4">
             <div className="flex justify-between">

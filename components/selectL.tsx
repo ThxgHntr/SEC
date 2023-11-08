@@ -13,11 +13,12 @@ const SelectL = (props: props) => {
       <ReactFlagsSelect
         selected={props.language}
         onSelect={(code) => props.setLanguage(code)}
-        countries={["GB", "VN", "JP"]}
+        countries={["GB", "VN", "JP", "FR"]}
         customLabels={{
           GB: "English",
           VN: "Tiếng Việt",
           JP: "日本語",
+          FR: "Français",
         }}
         placeholder="Language"
         showOptionLabel

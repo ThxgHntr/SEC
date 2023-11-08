@@ -37,30 +37,35 @@ export default function Home() {
   };
   return (
     <>
-      <Head>
-        <title>Smile Eyes Charity</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-      <div className="bg-white dark:text-black">
-        <div className="sticky top-0 z-50">
-          <Header
-            language={language}
-            setLanguage={changeLanguage}
-            t={t}
-            changePage={changePage}
+      <div className="w-full">
+        <Head>
+          <title>Smile Eyes Charity</title>
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
           />
-        </div>
-        <div className="mt-5">
-          <div>
-            <Homepage t={t} />
-            <Content t={t} />
-            <Completed />
-            <Blog />
-            <Contributors />
-            <Contact />
+        </Head>
+        <div className="bg-white dark:text-black">
+          <div className="sticky top-0 z-50">
+            <Header
+              language={language}
+              setLanguage={changeLanguage}
+              t={t}
+              changePage={changePage}
+            />
           </div>
-
-          <Footer />
+          <div className="mt-5">
+            <div>
+              <Homepage t={t} />
+              <Content t={t} />
+              <Completed />
+              <Blog />
+              <Contributors />
+              <Contact />
+              <AboutPage />
+            </div>
+            <Footer />
+          </div>
         </div>
       </div>
     </>
