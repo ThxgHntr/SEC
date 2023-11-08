@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import Contact from "@/components/Contact";
 import { useState } from "react";
 import ja from "@/components/locale/ja";
@@ -13,13 +12,12 @@ import Completed from "@/components/Completed";
 import Blog from "@/components/Blog";
 import Contributors from "@/components/Contributors";
 import Footer from "@/components/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
+import React from "react";
 
 export default function Home() {
   const [language, setLanguage] = useState("GB");
   const [t, setT] = useState(en);
-  const [page, setPage] = useState("home");
+  const [modalIsOpen, setIsOpen] = React.useState(false);
   const changeLanguage = (e: any) => {
     setLanguage(e);
     if (e === "JP") {
@@ -32,9 +30,6 @@ export default function Home() {
       }
     }
   };
-  const changePage = (e: any) => {
-    setPage(e);
-  };
   return (
     <>
       <div className="w-full">
@@ -46,13 +41,8 @@ export default function Home() {
           />
         </Head>
         <div className="bg-white dark:text-black">
-          <div className="sticky top-0 z-50">
-            <Header
-              language={language}
-              setLanguage={changeLanguage}
-              t={t}
-              changePage={changePage}
-            />
+          <div className="sticky top-0 z-30">
+            <Header language={language} setLanguage={changeLanguage} t={t} />
           </div>
           <div className="mt-5">
             <div>

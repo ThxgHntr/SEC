@@ -37,7 +37,11 @@ const Homepage = (props: Props) => {
               <CiShare1 className=" w-6 h-6" />
             </div>
             <div className="flex flex-row justify-between text-xl my-2">
-              <a className="font-bold underline" href="#">
+              <a
+                target="_blank"
+                href={props.t.PROJECTMAINLINK}
+                className="font-bold underline"
+              >
                 {props.t.DETAILS}
               </a>
               <a className="font-bold underline" href="#">

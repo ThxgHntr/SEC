@@ -74,8 +74,21 @@ const AboutPage = () => {
         </h1>
         <hr className="max-w-4xl h-1 mx-auto my-4 w-full bg-green-300 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
         <div className="flex flex-row w-full justify-between gap-2 mx-3">
-          <div>dashdaj</div>
-          <div className="mx-5 w-full">
+          <div className="flex flex-col">
+            {/* <div className="text-center font-bold text-4xl my-5 flex-1">
+              SMILE EYE CHARITY
+            </div>
+            <div className="text-center">
+              Công ty hoạt động từ thiện Smile Eye Charity, viết tắt là Smile
+              Eye Charity, là công ty phi lợi nhuận. Smile Eye Charity kết nối
+              các nguồn lực trong và ngoài nước để tổ chức các chương trình đào
+              tạo thực tế, đồng hành, và hỗ trợ người dân ở các khu vực còn
+              nhiều khó khăn. Các chương trình đào tạo nhằm mục đích giúp người
+              dân nâng cao kỹ năng sống và kỹ năng làm kinh tế một cách bền
+              vững.
+            </div> */}
+          </div>
+          <div className="mx-5 w-full flex-1">
             <form>
               <div className="mb-6">
                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
