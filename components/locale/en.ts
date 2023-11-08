@@ -24,6 +24,10 @@ const FIXED_ENGLISH_WORD = {
   DESCRIPTION:
     "Pa-Cang residential cluster, a place that lives closely with nature, faces economic difficulties. Smile Eye Charity is calling for support to provide economic and life skills to residents, helping them create new opportunities and improve their quality of life. Get involved and share the love to help them grow and prosper.",
   PROJECTMAINLINK: "/MainProjectEN.pdf",
+  PROJECT1_NAME:
+    "PROJECT TO SUPPORT BUILDING A LIVESTOCK AND GARDEN MODEL IN CO-TU PEOPLE VILLAGE",
+  PROJECT2_NAME: "SUPPORT TO BUILD AN ORGANIC FERTILIZER PRODUCTION FACILITY",
+  PROJECT1_LINK: "/Project1GB.pdf",
 };
 
 export default FIXED_ENGLISH_WORD;

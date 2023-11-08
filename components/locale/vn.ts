@@ -26,13 +26,20 @@ const FIXED_VIETNAMESE_WORD = {
   PROJECT_NAME:
     "PHÁT TRIỂN CỤM DÂN CƯ PÀ-CĂNG MỚI, THÔN PÀ ONG, XÃ CÀ DY, HUYỆN NAM GIANG",
 
+  // PROJECT 1
   PROJECT1: "https://www.youtube.com/embed/jKwQ8ork7Bw?si=NujiLCv-38N9hFlO",
   PROJECT1_DETAILS:
     "Các hộ gia đình ở làng Pà Căng mới có điện nước đầy đủ. Mỗi hộ có diện tích vườn trên 500m2. Người dân trồng trọt và chăn nuôi theo thói quen từ xưa và chưa tiếp cận được khoa học kỹ thuật. Hầu hết các vườn nhà đang để trống, có vài cây ăn quả, vài con gà, heo được nuôi thả thuận theo tự nhiên. Môi trường ngày càng ô nhiễm do chất thải và rác được thải trực tiếp ra vườn và suối.\nDự án nhằm xây dựng mô hình trồng trọt và chăn nuôi quy mô nhỏ trong cụm dân cư. Qua đó, chia sẻ kiến thức khoa học kỹ thuật về làm vườn, giúp bà con hiểu sâu sắc về làm kinh tế vườn và tự xây dựng được mô hình kinh tế vườn cho gia đình của mình. Kết quả là vườn nhà được sử dụng hiệu quả, mức sống được nâng cao. Hơn nữa, góp phần làm môi trường xanh sạch đẹp.",
+  PROJECT1_NAME:
+    "DỰ ÁN HỖ TRỢ X Y DỰNG MÔ HÌNH KINH TẾ VƯỜN Ở LÀNG PÀ CĂNG MỚI CỦA NGƯỜI CƠ TU",
+  PROJECT1_LINK: "/Project1VN.pdf",
 
+  // PROJECT 2
   PROJECT2: "https://www.youtube.com/embed/PaIaf8DhVrQ?si=qcZYvxqJtQPs6zwe",
   PROJECT2_DETAILS:
     "Phân bón hữu cơ là thành phần quan trọng quyết định chất lượng và sản lượng cây trồng. Dự án nhằm hỗ trợ người dân trong làng xây dựng xưởng sản xuất phân hữu cơ từ chất thải gia súc gia cầm, rác thải nông nghiệp, rác thải gia đình trong làng để làm nguồn phân cung cấp cho các mô hình kinh tế vườn và trang trại của bà con.\nKết quả là bà con hiểu được quy trình làm phân hữu cơ từ rác thải. Bà con có phân bón hữu cơ chất lượng cho vườn của mình với chi phí thấp. Thêm vào đó,  góp phần làm cho môi trường trong làng xanh sạch đẹp.",
+  PROJECT2_NAME:
+    "DỰ ÁN HỖ TRỢ X Y DỰNG XƯỞNG LÀM PH N HỮU CƠ Ở LÀNG PÀ CĂNG CỦA NGƯỜI CƠ TU",
 };
 
 export default FIXED_VIETNAMESE_WORD;

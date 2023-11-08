@@ -6,6 +6,8 @@ interface Props {
   t: any;
   src: any;
   text: String;
+  title?: String;
+  link: any;
 }
 
 const CardProgram = (props: Props) => {
@@ -13,7 +15,7 @@ const CardProgram = (props: Props) => {
     <div className="shadow-lg border border-gray-200 bg-white rounded-lg mt-5 my-3">
       <div className="flex flex-col gap-2">
         <div className="p-3">
-          <p className="text-2xl font-bold">Project name</p>
+          <p className="text-2xl font-bold">{props.title}</p>
           <div className="flex flex-row items-center justify-end gap-2">
             <IoCalendarOutline className="w-4 h-4" />
             <span>10/2023-10/2024</span>
@@ -34,7 +36,9 @@ const CardProgram = (props: Props) => {
             <CiShare1 className=" w-6 h-6" />
           </div>
           <div className="flex flex-row justify-between">
-            <a href="#">{props.t.DETAILS}</a>
+            <a className="underline" target="_blank" href={props.link}>
+              {props.t.DETAILS}
+            </a>
             <a href="#">{props.t.PLAN}</a>
             <div>
               <FcLike className="w-6 h-6" />

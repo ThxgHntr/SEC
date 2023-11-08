@@ -24,4 +24,8 @@ const FIXED_FRANCAIS_WORD = {
   DESCRIPTION:
     "Pa-Cang residential cluster, a place that lives closely with nature, faces economic difficulties. Smile Eye Charity is calling for support to provide economic and life skills to residents, helping them create new opportunities and improve their quality of life. Get involved and share the love to help them grow and prosper.",
   PROJECTMAINLINK: "/MainProjectFR.pdf",
+  PROJECT1_NAME:
+    "PROJET DE CONSTRUCTION D'UN JARDIN DE PLANTES ET D'ÉLEVAGES MODÈLE DE VILLAGE POPULAIRE DE CO TU",
+  PROJECT2_NAME:
+    "PROJET DE CONSTRUCTION D'UNE USINE DE PRODUCTION D'ENGRAIS ORGANIQUES DANS LE VILLAGE DE PA-CANG DE CO TU",
 };
