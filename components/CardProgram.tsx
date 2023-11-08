@@ -9,6 +9,7 @@ interface Props {
   title?: String;
   link: any;
   link_plan?: any;
+  setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const CardProgram = (props: Props) => {
@@ -61,7 +62,10 @@ const CardProgram = (props: Props) => {
                 />
               </div>
             </div>
-            <button className="bg-hong-bede rounded-lg p-2 font-bold hover:bg-hong-bede/[0.75]">
+            <button
+              onClick={() => props.setModalIsOpen(true)}
+              className="bg-hong-bede rounded-lg p-2 font-bold hover:bg-hong-bede/[0.75]"
+            >
               {props.t.BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR}
             </button>
           </div>

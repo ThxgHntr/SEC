@@ -18,7 +18,7 @@ import Modal from "@/components/Modal";
 export default function Home() {
   const [language, setLanguage] = useState("GB");
   const [t, setT] = useState(en);
-  const [modalIsOpen, setIsOpen] = React.useState(true);
+  const [modalIsOpen, setIsOpen] = React.useState(false);
   const changeLanguage = (e: any) => {
     setLanguage(e);
     if (e === "JP") {
@@ -50,8 +50,8 @@ export default function Home() {
           </div>
           <div className="mt-5">
             <div>
-              <Homepage t={t} />
-              <Content t={t} />
+              <Homepage setModalIsOpen={setIsOpen} t={t} />
+              <Content setModalIsOpen={setIsOpen} t={t} />
               <Completed />
               <Blog />
               <Contributors />

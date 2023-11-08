@@ -2,6 +2,7 @@ import React from "react";
 import CardProgram from "./CardProgram";
 interface Props {
   t: any;
+  setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const Content = (props: Props) => {
@@ -19,6 +20,7 @@ const Content = (props: Props) => {
           title={props.t.PROJECT1_NAME}
           link={props.t.PROJECT1_LINK}
           link_plan={props.t.PROJECT_PLAN_LINK}
+          setModalIsOpen={props.setModalIsOpen}
         />
         <CardProgram
           t={props.t}
@@ -27,6 +29,7 @@ const Content = (props: Props) => {
           title={props.t.PROJECT2_NAME}
           link={props.t.PROJECT2_LINK}
           link_plan={props.t.PROJECT_PLAN_LINK}
+          setModalIsOpen={props.setModalIsOpen}
         />
       </div>
     </div>

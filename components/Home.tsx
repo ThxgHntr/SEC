@@ -5,6 +5,7 @@ import { FcLike } from "react-icons/fc";
 
 interface Props {
   t: any;
+  setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const Homepage = (props: Props) => {
@@ -70,7 +71,10 @@ const Homepage = (props: Props) => {
                 </div>
               </div>
             </div>
-            <button className="bg-hong-bede rounded-lg p-2 font-bold hover:bg-hong-bede/[0.75]">
+            <button
+              onClick={() => props.setModalIsOpen(true)}
+              className="bg-hong-bede rounded-lg p-2 font-bold hover:bg-hong-bede/[0.75]"
+            >
               <div>{props.t.BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR}</div>
             </button>
           </div>
