@@ -7,7 +7,7 @@ const Completed = () => {
       <h1 className="text-4xl font-bold text-center my-5 pt-10">
         Completed Projects
       </h1>
-      <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded md:my-10"></hr>
+      <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded"></hr>
       <div className="flex flex-row justify-center gap-3 mx-3">
         <div className="max-w-xl w-full h-full shadow-lg border border-gray-200 bg-white rounded-lg">
           <CardCompleted />

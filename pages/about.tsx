@@ -8,7 +8,7 @@ const AboutPage = () => {
         <h1 className="text-4xl font-bold text-center my-5 pt-10">
           General Introduction
         </h1>
-        <hr className="max-w-3xl h-1 mx-auto my-4 w-full bg-green-300 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+        <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded"></hr>
         <h6 className="text-2xl mx-10 text-center">
           Trang web giới thiệu các tổ chức từ thiện và các dự án thiện nguyện
           đang hoạt động để giúp đỡ người khó khăn. Mỗi tổ chức được mô tả chi
@@ -59,8 +59,8 @@ const AboutPage = () => {
         </div>
 
         <h1 className="text-4xl font-bold text-center my-5 pt-10">Q & A</h1>
-        <hr className="max-w-4xl h-1 mx-auto my-4 w-full bg-green-300 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
-        <div className="flex flex-col items-center gap-2 mx-3">
+        <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded"></hr>
+        <div className="flex flex-col items-center gap-2 m-3">
           <QA />
           <QA />
           <QA />
@@ -69,8 +69,8 @@ const AboutPage = () => {
         <h1 className="text-4xl font-bold text-center my-5 pt-10">
           Liên hệ chúng tôi
         </h1>
-        <hr className="max-w-4xl h-1 mx-auto my-4 w-full bg-green-300 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
-        <div className="flex flex-row w-full justify-between gap-2 mx-3">
+        <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded"></hr>
+        <div className="flex flex-row gap-2 w-full justify-between m-3">
           <div className="flex flex-col">
             {/* <div className="text-center font-bold text-4xl my-5 flex-1">
               SMILE EYE CHARITY

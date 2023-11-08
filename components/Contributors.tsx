@@ -9,22 +9,24 @@ const Contributors = () => {
       <h1 className="text-4xl font-bold text-center my-5 pt-10">
         Contributors
       </h1>
-      <hr className="max-w-4xl h-1 mx-auto my-4 bg-xanh-le border-none rounded-full"></hr>
+      <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded"></hr>
       <h1 className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">VOLUNTEERS</h1>
-      <div className="flex flex-row gap-2 mx-3 my-3">
-        <CardVolunteer />
-        <CardVolunteer />
-        <CardVolunteer />
-      </div>
-      <div className="flex flex-row gap-2 mx-3 my-3">
-        <CardVolunteer />
-        <CardVolunteer />
-        <CardVolunteer />
+      <div className="flex flex-col gap-4 m-12">
+        <div className="flex flex-row gap-2">
+          <CardVolunteer />
+          <CardVolunteer />
+          <CardVolunteer />
+        </div>
+        <div className="flex flex-row gap-2">
+          <CardVolunteer />
+          <CardVolunteer />
+          <CardVolunteer />
+        </div>
       </div>
       <h1 className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">
         SPONSORS
       </h1>
-      <div className="flex flex-row gap-2 mx-3 my-3">
+      <div className="flex flex-row gap-4 m-12">
         <CardSponsors />
         <CardSponsors />
         <CardSponsors />
