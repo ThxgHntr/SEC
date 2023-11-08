@@ -23,7 +23,7 @@ const Homepage = (props: Props) => {
           <CiLocationOn className="w-12 h-12" />
         </div>
       </div>
-      <div className="shadow-2xl border border-gray-200 bg-white rounded-lg mt-5 my-3">
+      <div className="shadow-2xl bg-white rounded-lg mt-5 my-3">
         <div className="flex flex-row gap-3">
           <iframe
             className="w-10/12 rounded-l-lg"

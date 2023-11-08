@@ -3,7 +3,7 @@ import Url from "../public/founder.jpg";
 
 const CardSponsors = () => {
   return (
-    <div className=" border flex-col items-center w-80 flex border-gray-200 max-w-fit rounded-lg shadow-lg bg-white md:max-w-xl">
+    <div className="flex-col items-center w-80 flex max-w-fit rounded-lg shadow-lg bg-white md:max-w-xl">
       {/* <a
         href="#"
         className="flex flex-col items-center  bg-white  md:flex-row md:max-w-xl hover:bg-gray-100  dark:hover:bg-gray-700"

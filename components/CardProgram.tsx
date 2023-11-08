@@ -14,7 +14,7 @@ interface Props {
 
 const CardProgram = (props: Props) => {
   return (
-    <div className="shadow-lg border border-gray-200 bg-white rounded-lg mt-5 my-3">
+    <div className="shadow-lg bg-white rounded-lg mt-5 my-3">
       <div className="flex flex-col gap-2">
         <div className="p-3">
           <p className="text-2xl font-bold">{props.title}</p>

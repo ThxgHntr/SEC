@@ -55,7 +55,6 @@ export default function Home() {
               <Completed />
               <Blog />
               <Contributors />
-              <Contact />
               <AboutPage />
             </div>
             <Footer />
