@@ -23,7 +23,7 @@ const SelectL = (props: props) => {
         placeholder="Language"
         showOptionLabel
         showSelectedLabel
-        selectButtonClassName="text-red-500"
+        selectButtonClassName="hover:text-vang-khe"
       />
     </div>
   );
