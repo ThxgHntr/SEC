@@ -20,9 +20,8 @@ const AboutPage = () => {
             <Image
               src="/imgVN.png"
               alt=""
-              className="w-32 h-52"
-              width={0}
-              height={0}
+              width={128}
+              height={208}
             />
             <div className="text-center font-bold text-4xl my-5">TẦM NHÌN</div>
             <div className="text-center">
@@ -34,9 +33,8 @@ const AboutPage = () => {
             <Image
               src="/imgN.png"
               alt=""
-              className="w-32 h-52"
-              width={0}
-              height={0}
+              width={128}
+              height={208}
             />
             <div className="text-center font-bold text-4xl my-5">SỨ MỆNH</div>
             <div className="text-center w-auto">
@@ -48,9 +46,8 @@ const AboutPage = () => {
             <Image
               src="/imgKC.png"
               alt=""
-              className="w-32 h-52"
-              width={0}
-              height={0}
+              width={128}
+              height={208}
             />
             <div className="text-center font-bold text-4xl my-5">
               GIÁ TRỊ CỐT LÕI
