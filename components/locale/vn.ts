@@ -41,7 +41,7 @@ const FIXED_VIETNAMESE_WORD = {
   PROJECT2_DETAILS:
     "Phân bón hữu cơ là thành phần quan trọng quyết định chất lượng và sản lượng cây trồng. Dự án nhằm hỗ trợ người dân trong làng xây dựng xưởng sản xuất phân hữu cơ từ chất thải gia súc gia cầm, rác thải nông nghiệp, rác thải gia đình trong làng để làm nguồn phân cung cấp cho các mô hình kinh tế vườn và trang trại của bà con.\nKết quả là bà con hiểu được quy trình làm phân hữu cơ từ rác thải. Bà con có phân bón hữu cơ chất lượng cho vườn của mình với chi phí thấp. Thêm vào đó,  góp phần làm cho môi trường trong làng xanh sạch đẹp.",
   PROJECT2_NAME:
-    "DỰ ÁN HỖ TRỢ XÂY DỰNG XƯỞNG LÀM PH N HỮU CƠ Ở LÀNG PÀ CĂNG CỦA NGƯỜI CƠ TU",
+    "DỰ ÁN HỖ TRỢ XÂY DỰNG XƯỞNG LÀM PHÂN HỮU CƠ Ở LÀNG PÀ CĂNG CỦA NGƯỜI CƠ TU",
   PROJECT2_LINK: "/Project2VN.pdf",
 };
 
