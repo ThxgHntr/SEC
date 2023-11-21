@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoCalendarOutline } from "react-icons/io5";
 import { CiLocationOn, CiShare1 } from "react-icons/ci";
 import { FcLike } from "react-icons/fc";
+import PdfModal from "./PdfModal";
 
 interface Props {
   t: any;
@@ -9,6 +10,22 @@ interface Props {
 }
 
 const Homepage = (props: Props) => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [currentPdf, setCurrentPdf] = useState("");
+
+  const openModalDetail = () => {
+    setCurrentPdf(props.t.PROJECT_MAIN_LINK);
+    setModalIsOpen(true);
+  };
+
+  const openModalPlan = () => {
+    setCurrentPdf(props.t.PROJECT_PLAN_LINK);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
   return (
     <div className="mx-auto p-2 w-full max-w-7xl">
       <p className="text-5xl font-bold text-center mb-3">
@@ -38,20 +55,18 @@ const Homepage = (props: Props) => {
               <CiShare1 className=" w-6 h-6" />
             </div>
             <div className="flex flex-row justify-between text-xl my-2">
-              <a
-                target="_blank"
-                href={props.t.PROJECTMAINLINK}
-                className="font-bold underline"
+              <p
+                onClick={openModalDetail}
+                className="font-bold underline hover:cursor-pointer"
               >
                 {props.t.DETAILS}
-              </a>
-              <a
-                target="_blank"
-                className="font-bold underline"
-                href={props.t.PROJECT_PLAN_LINK}
+              </p>
+              <p
+                onClick={openModalPlan}
+                className="font-bold underline hover:cursor-pointer"
               >
                 {props.t.PLAN}
-              </a>
+              </p>
               <div className="flex flex-row gap-2">
                 <FcLike className="w-6 h-6" />
                 325
@@ -80,6 +95,11 @@ const Homepage = (props: Props) => {
           </div>
         </div>
       </div>
+      <PdfModal
+        isOpen={modalIsOpen}
+        onClose={closeModal}
+        pdfSrc={currentPdf}
+      />
     </div>
   );
 };
