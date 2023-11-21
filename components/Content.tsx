@@ -21,6 +21,7 @@ const Content = (props: Props) => {
           link={props.t.PROJECT1_LINK}
           link_plan={props.t.PROJECT_PLAN_LINK}
           setModalIsOpen={props.setModalIsOpen}
+          numLike={148}
         />
         <CardProgram
           t={props.t}
@@ -30,6 +31,7 @@ const Content = (props: Props) => {
           link={props.t.PROJECT2_LINK}
           link_plan={props.t.PROJECT_PLAN_LINK}
           setModalIsOpen={props.setModalIsOpen}
+          numLike={329}
         />
       </div>
     </div>

@@ -1,8 +1,20 @@
 import { IoCalendarOutline } from "react-icons/io5";
 import { CiShare1 } from "react-icons/ci";
-import { FcLike } from "react-icons/fc";
+import { IoHeartCircleSharp } from "react-icons/io5";
+import { useState } from "react";
 
 const CardCompleted = () => {
+  const [numLike, setNumLike] = useState(256);
+  const copyLink = () => {
+    if (navigator.clipboard) {
+      navigator.clipboard
+        .writeText("https://youtu.be/543jwFfCZvg")
+        .then(() => alert("Link copied to clipboard"));
+    } else {
+      alert("Your browser does not support clipboard API");
+    }
+  };
+
   return (
     <div className="h-full shadow-lg border border-gray-200 bg-white rounded-lg">
       <div className="flex flex-col gap-2">
@@ -33,8 +45,11 @@ const CardCompleted = () => {
           <div className="flex flex-row justify-between">
             <a href="#">Details</a>
             <a href="#">Details</a>
-            <div>
-              <FcLike className="w-6 h-6" />
+            <div className="flex flex-row gap-2">
+              <button onClick={() => setNumLike(numLike + 1)}>
+                <IoHeartCircleSharp className="w-6 h-6 text-red-500" />
+              </button>
+              <span>{numLike}</span>
             </div>
           </div>
           <div className="flex flex-col gap-4">

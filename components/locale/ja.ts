@@ -30,8 +30,8 @@ const FIXED_JAPANESE_WORD = {
   PROJECT2_NAME: "コトゥ族のパチャン村に有機肥料生産工場を建設するプロジェクト",
   PROJECT1_LINK: "/Project1JP.pdf",
   PROJECT2_LINK: "/Project2JP.pdf",
-  PROJECT_PLAN_LINK:
-    "https://drive.google.com/file/d/1byiu9-M1lJBL7SB0ZVcouB4EmI4AnP0x/view?usp=drive_link",
+  PROJECT_PLAN_LINK: "/MainProjectPlanJP.pdf",
+  PROJECT_MAIN_LINK: "/MainProjectJP.pdf",
 };
 
 export default FIXED_JAPANESE_WORD;

@@ -1,6 +1,7 @@
 import { IoCalendarOutline } from "react-icons/io5";
 import { CiShare1 } from "react-icons/ci";
-import { FcLike } from "react-icons/fc";
+import { useState } from "react";
+import { IoHeartCircleSharp } from "react-icons/io5";
 
 interface Props {
   t: any;
@@ -9,10 +10,21 @@ interface Props {
   title?: String;
   link: any;
   link_plan?: any;
+  numLike: number;
   setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const CardProgram = (props: Props) => {
+  const [numLike, setNumLike] = useState(props.numLike);
+  const copyLink = () => {
+    if (navigator.clipboard) {
+      navigator.clipboard
+        .writeText(props.src)
+        .then(() => alert("Link copied to clipboard"));
+    } else {
+      alert("Your browser does not support clipboard API");
+    }
+  };
   return (
     <div className="shadow-lg bg-white rounded-lg mt-5 my-3">
       <div className="flex flex-col gap-2">
@@ -34,7 +46,7 @@ const CardProgram = (props: Props) => {
           <div>
             <p className="text-base">{props.text?.slice(0, 150) + "..."}</p>
           </div>
-          <div className="flex flex-row-reverse w-full">
+          <div onClick={copyLink} className="flex flex-row-reverse w-full">
             <CiShare1 className=" w-6 h-6" />
           </div>
           <div className="flex flex-row justify-between">
@@ -45,8 +57,10 @@ const CardProgram = (props: Props) => {
               {props.t.PLAN}
             </a>
             <div className="flex flex-row gap-2">
-              <FcLike className="w-6 h-6" />
-              296
+              <button onClick={() => setNumLike(numLike + 1)}>
+                <IoHeartCircleSharp className="w-6 h-6 text-red-500" />
+              </button>
+              <span>{numLike}</span>
             </div>
           </div>
           <div className="flex flex-col gap-4">

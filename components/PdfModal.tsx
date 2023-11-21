@@ -20,13 +20,8 @@ const PdfModal: React.FC<PdfModalProps> = ({ isOpen, onClose, pdfSrc }) => {
 
   return (
     <Modal isOpen={isOpen} onRequestClose={onClose} style={modalStyle}>
-      <iframe
-        title="PDF Viewer"
-        src={pdfSrc}
-        width="100%"
-        height="100%"
-      />
-      <button onClick={onClose}>Close</button>
+      <iframe title="PDF Viewer" src={pdfSrc} width="100%" height="100%" />
+      {/* <button onClick={onClose}>Close</button> */}
     </Modal>
   );
 };

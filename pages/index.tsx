@@ -3,6 +3,7 @@ import { useState } from "react";
 import ja from "@/components/locale/ja";
 import en from "@/components/locale/en";
 import vn from "@/components/locale/vn";
+import fr from "@/components/locale/fr";
 import AboutPage from "./about";
 import Header from "@/components/Navbar";
 import Head from "next/head";
@@ -27,7 +28,11 @@ export default function Home() {
       if (e === "GB") {
         setT(en);
       } else {
-        setT(vn);
+        if (e === "VN") {
+          setT(vn);
+        } else {
+          setT(fr);
+        }
       }
     }
   };

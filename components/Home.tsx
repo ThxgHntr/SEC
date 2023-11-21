@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoCalendarOutline } from "react-icons/io5";
 import { CiLocationOn, CiShare1 } from "react-icons/ci";
-import { FcLike } from "react-icons/fc";
+import { IoHeartCircleSharp } from "react-icons/io5";
 import PdfModal from "./PdfModal";
 
 interface Props {
@@ -12,7 +12,18 @@ interface Props {
 const Homepage = (props: Props) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentPdf, setCurrentPdf] = useState("");
+  const linkCopy = "https://youtu.be/543jwFfCZvg";
+  const [numLike, setNumLike] = useState(256);
 
+  const copyLink = () => {
+    if (navigator.clipboard) {
+      navigator.clipboard
+        .writeText(linkCopy)
+        .then(() => alert("Link copied to clipboard"));
+    } else {
+      alert("Your browser does not support clipboard API");
+    }
+  };
   const openModalDetail = () => {
     setCurrentPdf(props.t.PROJECT_MAIN_LINK);
     setModalIsOpen(true);
@@ -51,7 +62,7 @@ const Homepage = (props: Props) => {
           ></iframe>
           <div className="flex flex-col justify-between gap-4 p-4 w-7/12">
             <p className="text-2xl">{props.t.DESCRIPTION}</p>
-            <div className="flex flex-row-reverse w-full">
+            <div onClick={copyLink} className="flex flex-row-reverse w-full">
               <CiShare1 className=" w-6 h-6" />
             </div>
             <div className="flex flex-row justify-between text-xl my-2">
@@ -68,8 +79,10 @@ const Homepage = (props: Props) => {
                 {props.t.PLAN}
               </p>
               <div className="flex flex-row gap-2">
-                <FcLike className="w-6 h-6" />
-                325
+                <button onClick={() => setNumLike(numLike + 1)}>
+                  <IoHeartCircleSharp className="w-6 h-6 text-red-500" />
+                </button>
+                <span>{numLike}</span>
               </div>
             </div>
             <div>
@@ -95,11 +108,7 @@ const Homepage = (props: Props) => {
           </div>
         </div>
       </div>
-      <PdfModal
-        isOpen={modalIsOpen}
-        onClose={closeModal}
-        pdfSrc={currentPdf}
-      />
+      <PdfModal isOpen={modalIsOpen} onClose={closeModal} pdfSrc={currentPdf} />
     </div>
   );
 };
