@@ -47,9 +47,11 @@ const Homepage = (props: Props) => {
           <IoCalendarOutline className="w-10 h-10" />
           <span className="text-2xl">10/2023-10/2024</span>
         </div>
-        <div className="order-last">
-          <CiLocationOn className="w-12 h-12" />
-        </div>
+        <a href="#map">
+          <div className="order-last">
+            <CiLocationOn className="w-12 h-12" />
+          </div>
+        </a>
       </div>
       <div className="shadow-2xl bg-white rounded-lg mt-5 my-3">
         <div className="flex flex-row gap-3">

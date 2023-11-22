@@ -61,6 +61,8 @@ export default function Home() {
               <Blog />
               <Contributors />
               <AboutPage />
+              <iframe className="p-4" id="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122940.32531454475!2d107.71879703731044!3d15.651102307050596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316a09486e636723%3A0x61975a50a04280b2!2sC%C3%A0%20Dy%2C%20Nam%20Giang%20District%2C%20Qu%E1%BA%A3ng%20Nam%2C%20Vietnam!5e0!3m2!1sen!2s!4v1700631246936!5m2!1sen!2s" width="100%" height="450" loading="lazy" ></iframe>
             </div>
             <Footer />
           </div>
