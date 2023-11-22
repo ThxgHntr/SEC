@@ -41,7 +41,7 @@ const Header = (props: props) => {
         </a>
 
         <a
-          href="#contact"
+          href="#QA"
           className="text-lg pt-1 text-white hover:text-vang-khe"
         >
           {props.t.QACONTACT}

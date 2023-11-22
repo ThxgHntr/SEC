@@ -26,7 +26,7 @@ const Contributors = () => {
       <p className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">
         SPONSORS
       </p>
-      <div className="flex flex-row gap-4 m-12">
+      <div className="flex flex-row gap-4 m-12" id="sponsors">
         <CardSponsors />
         <CardSponsors />
         <CardSponsors />
