@@ -124,13 +124,14 @@ const AboutPage = (props: Props) => {
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
               required
             ></input>
-            <div></div>
-            <button
-              type="submit"
-              className="text-white bg-xanh-le hover:bg-xanh-dam rounded-lg text-sm w-44 px-5 py-2.5 mt-6 text-center"
-            >
-              Submit
-            </button>
+            <div className="my-4 flex justify-end">
+              <button
+                type="submit"
+                className="text-white bg-xanh-le hover:bg-xanh-dam rounded-lg text-sm w-44 p-2 text-center"
+              >
+                Submit
+              </button>
+            </div>
           </form>
         </div>
       </div>
