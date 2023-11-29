@@ -15,16 +15,23 @@ interface Props {
 }
 
 const CardProgram = (props: Props) => {
-  const [numLike, setNumLike] = useState(props.numLike);
+  const linkCopy = "https://youtu.be/543jwFfCZvg";
+  const [numLike, setNumLike] = useState(256);
+  const [isCopied, setIsCopied] = useState(false);
   const copyLink = () => {
     if (navigator.clipboard) {
       navigator.clipboard
-        .writeText(props.src)
-        .then(() => alert("Link copied to clipboard"));
+        .writeText(linkCopy)
+        .then(() => {
+          setIsCopied(true);
+          setTimeout(() => setIsCopied(false), 2000);
+        })
+        .catch((error) => console.error("Copy failed:", error));
     } else {
       alert("Your browser does not support clipboard API");
     }
   };
+
   return (
     <div className="shadow-lg bg-white rounded-lg mt-5 my-3">
       <div className="flex flex-col gap-2">
@@ -46,8 +53,13 @@ const CardProgram = (props: Props) => {
           <div>
             <p className="text-base">{props.text?.slice(0, 150) + "..."}</p>
           </div>
-          <div onClick={copyLink} className="flex flex-row-reverse w-full">
-            <CiShare1 className=" w-6 h-6" />
+          <div onClick={copyLink} className="flex flex-row-reverse w-full relative">
+            <CiShare1 className=" w-6 h-6 hover:cursor-pointer" />
+            {isCopied && (
+              <div className="absolute bg-white p-2 rounded-lg border shadow-md bottom-8 left-auto">
+                <p className="text-green-500">Copied!</p>
+              </div>
+            )}
           </div>
           <div className="flex flex-row justify-between">
             <a className="underline" target="_blank" href={props.link}>

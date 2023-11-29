@@ -85,6 +85,33 @@ const AboutPage = () => {
         <div className="mx-5 w-full flex-1">
           <form>
             <div className="mb-6">
+
+              <label
+                htmlFor="message"
+                className="block mb-2 text-sm font-medium text-gray-900"
+              >
+                Your message
+              </label>
+              <textarea
+                id="message"
+                rows={4}
+                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300"
+                placeholder="Leave a comment..."
+              ></textarea>
+            </div>
+            <div className="mb-6">
+              <label className="block mb-2 text-sm font-medium text-gray-900">
+                Your name
+              </label>
+              <input
+                type="name"
+                id="name"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+                placeholder="name"
+                required
+              ></input>
+            </div>
+            <div className="mb-6">
               <label className="block mb-2 text-sm font-medium text-gray-900">
                 Your email
               </label>
@@ -96,30 +123,17 @@ const AboutPage = () => {
                 required
               ></input>
             </div>
-            <div className="mb-6">
-              <label className="block mb-2 text-sm font-medium text-gray-900">
-                Your phone
-              </label>
-              <input
-                placeholder="0123456789"
-                type="phone"
-                id="phone"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
-                required
-              ></input>
-            </div>
-            <label
-              htmlFor="message"
-              className="block mb-2 text-sm font-medium text-gray-900"
-            >
-              Your message
+            <label className="block mb-2 text-sm font-medium text-gray-900">
+              Your phone
             </label>
-            <textarea
-              id="message"
-              rows={4}
-              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300"
-              placeholder="Leave a comment..."
-            ></textarea>
+            <input
+              placeholder="0123456789"
+              type="phone"
+              id="phone"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+              required
+            ></input>
+            <div></div>
             <button
               type="submit"
               className="text-white bg-xanh-le hover:bg-xanh-dam rounded-lg text-sm w-44 px-5 py-2.5 mt-6 text-center"

@@ -14,16 +14,21 @@ const Homepage = (props: Props) => {
   const [currentPdf, setCurrentPdf] = useState("");
   const linkCopy = "https://youtu.be/543jwFfCZvg";
   const [numLike, setNumLike] = useState(256);
-
+  const [isCopied, setIsCopied] = useState(false);
   const copyLink = () => {
     if (navigator.clipboard) {
       navigator.clipboard
         .writeText(linkCopy)
-        .then(() => alert("Link copied to clipboard"));
+        .then(() => {
+          setIsCopied(true);
+          setTimeout(() => setIsCopied(false), 2000);
+        })
+        .catch((error) => console.error("Copy failed:", error));
     } else {
       alert("Your browser does not support clipboard API");
     }
   };
+
   const openModalDetail = () => {
     setCurrentPdf(props.t.PROJECT_MAIN_LINK);
     setModalIsOpen(true);
@@ -64,9 +69,15 @@ const Homepage = (props: Props) => {
           ></iframe>
           <div className="flex flex-col justify-between gap-4 p-4 w-7/12">
             <p className="text-2xl">{props.t.DESCRIPTION}</p>
-            <div onClick={copyLink} className="flex flex-row-reverse w-full">
-              <CiShare1 className=" w-6 h-6" />
+            <div onClick={copyLink} className="flex flex-row-reverse w-full relative">
+              <CiShare1 className=" w-6 h-6 hover:cursor-pointer" />
+              {isCopied && (
+                <div className="absolute bg-white p-2 rounded-lg border shadow-md bottom-8 left-auto">
+                  <p className="text-green-500">Copied!</p>
+                </div>
+              )}
             </div>
+
             <div className="flex flex-row justify-between text-xl my-2">
               <p
                 onClick={openModalDetail}

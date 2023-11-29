@@ -4,12 +4,18 @@ import { IoHeartCircleSharp } from "react-icons/io5";
 import { useState } from "react";
 
 const CardCompleted = () => {
+  const linkCopy = "https://youtu.be/543jwFfCZvg";
   const [numLike, setNumLike] = useState(256);
+  const [isCopied, setIsCopied] = useState(false);
   const copyLink = () => {
     if (navigator.clipboard) {
       navigator.clipboard
-        .writeText("https://youtu.be/543jwFfCZvg")
-        .then(() => alert("Link copied to clipboard"));
+        .writeText(linkCopy)
+        .then(() => {
+          setIsCopied(true);
+          setTimeout(() => setIsCopied(false), 2000);
+        })
+        .catch((error) => console.error("Copy failed:", error));
     } else {
       alert("Your browser does not support clipboard API");
     }
@@ -39,8 +45,13 @@ const CardCompleted = () => {
               ádjasgdajs duiassgdasj
             </p>
           </div>
-          <div className="flex flex-row-reverse w-full">
-            <CiShare1 className=" w-6 h-6" />
+          <div onClick={copyLink} className="flex flex-row-reverse w-full relative">
+            <CiShare1 className=" w-6 h-6 hover:cursor-pointer" />
+            {isCopied && (
+              <div className="absolute bg-white p-2 rounded-lg border shadow-md bottom-8 left-auto">
+                <p className="text-green-500">Copied!</p>
+              </div>
+            )}
           </div>
           <div className="flex flex-row justify-between">
             <a href="#">Details</a>
