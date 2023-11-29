@@ -40,7 +40,7 @@ const FIXED_ENGLISH_WORD = {
 
   A1: `Thank you for your great vission.
   Yes, all of us are very exciting to proceed the poject. We believe on our effort and strong cooperation and love for the development of the people and the village.
-  The project has many programs. These are practical training programs, suitable to the human and natural potential of the region. For the new Pà-cang village, agriculture, green tourism and services are very potential. Therefore, training programs will focus on:
+  The project has many programs. These are practical training programs, suitable to the human and natural potential of the region. For the new Pà-cang village, agriculture, green tourism and services are very potential. Therefore, training programs will focus on: 
   - Developing sustainable agriculture and protecting the environment
   - Develop life skills for children
   - Improve professional skills, products and services
