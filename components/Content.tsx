@@ -7,12 +7,12 @@ interface Props {
 
 const Content = (props: Props) => {
   return (
-    <div className="mx-auto my-0 w-full max-w-5xl" id="project">
+    <div className="mx-auto p-2 w-full max-w-7xl" id="project">
       <p className="text-4xl font-bold text-center my-5 pt-10">
         {props.t.INCOMING_PROJECTS}
       </p>
       <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded"></hr>
-      <div className="flex flex-row justify-between m-3 gap-5">
+      <div className="flex flex-row justify-between m-3 gap-10">
         <CardProgram
           t={props.t}
           src={props.t.PROJECT1}
