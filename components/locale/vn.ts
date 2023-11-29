@@ -43,6 +43,26 @@ const FIXED_VIETNAMESE_WORD = {
   PROJECT2_NAME:
     "DỰ ÁN HỖ TRỢ XÂY DỰNG XƯỞNG LÀM PHÂN HỮU CƠ Ở LÀNG PÀ CĂNG CỦA NGƯỜI CƠ TU",
   PROJECT2_LINK: "/Project2VN.pdf",
+
+  // Q&A
+  Q1: "Nếu chúng ta phát triển được một ngôi làng, thì chúng ta cũng cũng sẽ tìm ra cách phát triển những ngôi làng khác. Do vậy tôi thấy dự án này phát triển một ngôi làng này rất có tầm nhìn và bền vững. Tôi muốn hiểu hơn về các chương trình cụ thể, từ đó tôi có thể sắp xếp để tham gia một vài chương trình nào đó.",
+  Q2: "Nếu tôi tham gia, thì tôi sẽ ở đâu, và ăn uống thế nào?",
+  Q3: "Tôi muốn đóng góp một số ý kiến cho dự án. Tôi liên lạc với ai?",
+  Q4: "Tôi muốn đứng ra vận động quyên góp cho dự án. Tôi liên lạc ai?",
+  Q5: "Dự án có nhận sự tài trợ bằng tiền không? ",
+
+  A1: `Cảm ơn ý kiến đóng góp chân thành và tầm nhìn tuyệt vời của bạn. Tất cả chúng ta đang rất hào hứng thực hiện dự án này. Chúng ta tin tưởng mãnh liệt vào sự nỗ lực, hợp tác và tình yêu mà chúng ta dành con người và vùng đất này.
+  Dự án có nhiều chương trình. Đó là các chương trình đào tạo bằng thực tế, phù hợp với tiềm năng con người và tự nhiên của vùng. Đối với làng PÀ-căng mới thì nông nghiệp, du lịch dịch vụ xanh là rất tiềm năng. Do vậy, các chương trình đào tạo sẽ tập trung vào:
+  - Phát triển nông nghiệp bền vững, bảo vệ môi trường
+  - Phát triển kỹ năng sống cho trẻ em
+  - Nâng cao kỹ năng làm nghề, làm sản phẩm, dịch vụ
+  - Phát triển kỹ năng làm kinh doanh
+  - Phát triển kỹ năng giao tiếp và ngoại ngữ
+  Hãy gọi 0962 414 125 hoặc email dinhdongphuong@gmail.com để nắm rõ và đăng ký tham gia bạn nhé.`,
+  A2: "Tùy vào chương trình cụ thể. Nếu chương trình yêu cầu tham gia đào tạo thực tế tại ngôi làm thì chúng ta sẽ ở lại trong làng. Ban tổ chức sẽ sắp xếp cho bạn. ",
+  A3: "Cảm ơn những ý kiến đóng góp chân thành của bạn. Bạn gọi 0962 414 125 hoặc email dinhdongphuong@gmail.com cho Phương nhé.",
+  A4: "Cảm ơn sự hỗ trợ và cộng tác chân thành của bạn. Bạn gọi 0962 414 125 hoặc email dinhdongphuong@gmail.com cho Phương để nắm rõ hơn về các dự án nhé. ",
+  A5: "Mỗi chương trình của dự án có nội dung chi tiết được đăng ở website. Nếu là chương trình cần sự hỗ trợ về tài chính, bạn hãy liên lạc với chúng tôi bằng email dinhdongphuong@gmail.com hoặc số điện thoại 0962 414 125. Bạn cũng có thể chuyển khoản đến tài khoản của chức Smile Eye Charity.",
 };
 
 export default FIXED_VIETNAMESE_WORD;

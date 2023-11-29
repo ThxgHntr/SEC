@@ -32,6 +32,27 @@ const FIXED_JAPANESE_WORD = {
   PROJECT2_LINK: "/Project2JP.pdf",
   PROJECT_PLAN_LINK: "/MainProjectPlanJP.pdf",
   PROJECT_MAIN_LINK: "/MainProjectJP.pdf",
+
+  Q1: "If we can develop one village, we will also find a way to develop other villages. Therefore, I find this project to develop a village very visionary and sustainable. I want to understand more about specific programs so I can arrange to participate in certain programs.",
+  Q2: "If I participate, where will I stay?",
+  Q3: "I would like to contribute some ideas to the project. Who do I contact?",
+  Q4: "I want to mobilize donations for the project. Who do I contact?",
+  Q5: "Does the project receive monetary sponsorship?",
+
+  A1: `Thank you for your great vission.
+  Yes, all of us are very exciting to proceed the poject. We believe on our effort and strong cooperation and love for the development of the people and the village.
+  The project has many programs. These are practical training programs, suitable to the human and natural potential of the region. For the new Pà-cang village, agriculture, green tourism and services are very potential. Therefore, training programs will focus on:
+  - Developing sustainable agriculture and protecting the environment
+  - Develop life skills for children
+  - Improve professional skills, products and services
+  - Develop business skills
+  - Develop communication and foreign language skills
+  Please call 0962 414 125 or email dinhdongphuong@gmail.com for all information and registering to participate.`,
+  A2: "Depends on the specific program. If the program requires participation in practical training at the workplace, we will stay in the village. The organizers will make arrangements for you.",
+  A3: "Thank you for your sincere advice. Please call 0962 414 125 or email dinhdongphuong@gmail.com to Ms. Phuong.",
+  A4: "Thank you for your sincere support and cooperation. Please call 0962 414 125 or email dinhdongphuong@gmail.com to Ms. Phuong for all information of the projects.",
+  A5: `Each project program has detail content posted on the website. If the program needs financial support, please contact us by email dinhdongphuong@gmail.com or phone number 0962 414 125. You can also transfer money to Smile Eye Charity's account.
+  Account number: 020166669999, MB bank, Smile Eye Charity`,
 };
 
 export default FIXED_JAPANESE_WORD;
