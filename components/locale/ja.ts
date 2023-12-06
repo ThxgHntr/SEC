@@ -24,7 +24,6 @@ const FIXED_JAPANESE_WORD = {
   DESCRIPTION:
     "自然と密接に暮らすパチャンの住宅群は経済的困難に直面している。 Smile Eye Charity は、住民に経済的および生活スキルを提供し、新たな機会を創出し、生活の質を向上させるための支援を呼びかけています。 参加して愛を分かち合い、彼らの成長と繁栄を助けましょう。",
   DESCRIPTION_DETAILS: "説明の詳細",
-  PROJECTMAINLINK: "/MainProjectJP.pdf",
   PROJECT1_NAME:
     "コトゥー民族の村における植物園や畜産園モデル構築するためのサポート",
   PROJECT2_NAME: "コトゥ族のパチャン村に有機肥料生産工場を建設するプロジェクト",

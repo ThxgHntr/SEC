@@ -18,7 +18,6 @@ const FIXED_VIETNAMESE_WORD = {
 
   // Main project
   PROGRAM_SRC: "https://www.youtube.com/embed/543jwFfCZvg?si=cD45b_uwE2PplHSP",
-  PROJECTMAINLINK: "/MainProjectVN.pdf",
   DESCRIPTION:
     "Cụm dân cư Pà-Căng, nơi sống gắn bó với thiên nhiên, đối mặt với khó khăn kinh tế. Smile Eye Charity đang kêu gọi sự hỗ trợ để cung cấp kỹ năng làm kinh tế và sống cho cư dân, giúp họ tạo cơ hội mới và nâng cao chất lượng cuộc sống. Hãy tham gia và chia sẻ tình yêu để giúp họ phát triển và thịnh vượng.",
   DESCRIPTION_DETAILS:
