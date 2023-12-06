@@ -57,7 +57,7 @@ const AboutPage = (props: Props) => {
       </div>
 
       <p className="text-4xl font-bold text-center my-5 pt-10">
-        Liên hệ chúng tôi
+        Liên hệ với chúng tôi
       </p>
       <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded"></hr>
       <div className="flex flex-row gap-2 w-full justify-between">

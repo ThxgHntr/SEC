@@ -28,7 +28,7 @@ const ContactForm: React.FC = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="mx-auto p-2 w-full max-w-7xl">
             <div className="mb-6">
                 <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900">
                     Your message

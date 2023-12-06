@@ -69,7 +69,10 @@ const Homepage = (props: Props) => {
           ></iframe>
           <div className="flex flex-col justify-between gap-4 p-4 w-7/12">
             <p className="text-2xl">{props.t.DESCRIPTION}</p>
-            <div onClick={copyLink} className="flex flex-row-reverse w-full relative">
+            <div
+              onClick={copyLink}
+              className="flex flex-row-reverse w-full relative"
+            >
               <CiShare1 className=" w-6 h-6 hover:cursor-pointer" />
               {isCopied && (
                 <div className="absolute bg-white p-2 rounded-lg border shadow-md bottom-8 left-auto">
@@ -113,10 +116,12 @@ const Homepage = (props: Props) => {
               </div>
             </div>
             <button
-              onClick={() => props.setModalIsOpen(true)}
+              // onClick={() => props.setModalIsOpen(true)}
               className="bg-hong-bede rounded-lg p-2 font-bold hover:bg-hong-bede/[0.75]"
             >
-              <div>{props.t.BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR}</div>
+              <a href="#QA">
+                <div>{props.t.BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR}</div>
+              </a>
             </button>
           </div>
         </div>

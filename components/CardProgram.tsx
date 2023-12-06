@@ -89,10 +89,12 @@ const CardProgram = (props: Props) => {
               </div>
             </div>
             <button
-              onClick={() => props.setModalIsOpen(true)}
+              // onClick={() => props.setModalIsOpen(true)}
               className="bg-hong-bede rounded-lg p-2 font-bold hover:bg-hong-bede/[0.75]"
             >
-              {props.t.BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR}
+              <a href="#QA">
+                <div>{props.t.BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR}</div>
+              </a>
             </button>
           </div>
         </div>
