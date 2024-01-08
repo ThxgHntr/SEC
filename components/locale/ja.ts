@@ -16,6 +16,7 @@ const FIXED_JAPANESE_WORD = {
   QACONTACT: "Q&A & お問い合わせ",
   PROGRESS: "進捗",
   PROJECT_NAME: "ベトナムのコトゥ民族のパキャン村の持続可能な発展",
+  ADDRESSS: "住所",
   LOCATION: "クアンナム省ナムザン地区Ca-Dyコミューン",
   BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR:
     "コントリビューターまたはスポンサーになる",
@@ -52,6 +53,17 @@ const FIXED_JAPANESE_WORD = {
   A4: "Thank you for your sincere support and cooperation. Please call 0962 414 125 or email dinhdongphuong@gmail.com to Ms. Phuong for all information of the projects.",
   A5: `Each project program has detail content posted on the website. If the program needs financial support, please contact us by email dinhdongphuong@gmail.com or phone number 0962 414 125. You can also transfer money to Smile Eye Charity's account.
   Account number: 020166669999, MB bank, Smile Eye Charity`,
+
+
+  //Footer
+  INFO: "会社情報",
+  COMPANY_NAME: "会社名",
+  NAME:"特定非営利活動法人Smile Eye Charity（略称：Smile Eye Charity）",
+  THUE:"税登録番号",
+  STK:"口座番号",
+  TIME: "営業時間",
+  TIME_DETAIL: "月曜日から土曜日: 8h30-17h30",
+  HELP: "24/7対応",
 };
 
 export default FIXED_JAPANESE_WORD;

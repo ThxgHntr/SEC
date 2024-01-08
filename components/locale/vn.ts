@@ -11,6 +11,7 @@ const FIXED_VIETNAMESE_WORD = {
   CONTRIBUTORS: "Người tham gia",
   CONTACT: "Liên hệ",
   PROGRESS: "Tiến độ",
+  ADDRESSS: "Địa chỉ",
   LOCATION: "Xã Cà-Dy, huyện Nam Giang, tỉnh Quảng Nam",
   BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR: "Trở thành người tham gia hoặc đối tác",
   DETAILS: "Chi tiết",
@@ -62,6 +63,16 @@ const FIXED_VIETNAMESE_WORD = {
   A3: "Cảm ơn những ý kiến đóng góp chân thành của bạn. Bạn gọi 0962 414 125 hoặc email dinhdongphuong@gmail.com cho Phương nhé.",
   A4: "Cảm ơn sự hỗ trợ và cộng tác chân thành của bạn. Bạn gọi 0962 414 125 hoặc email dinhdongphuong@gmail.com cho Phương để nắm rõ hơn về các dự án nhé. ",
   A5: "Mỗi chương trình của dự án có nội dung chi tiết được đăng ở website. Nếu là chương trình cần sự hỗ trợ về tài chính, bạn hãy liên lạc với chúng tôi bằng email dinhdongphuong@gmail.com hoặc số điện thoại 0962 414 125. Bạn cũng có thể chuyển khoản đến tài khoản của chức Smile Eye Charity.",
+
+  // FOOTER
+  INFO:"THÔNG TIN CÔNG TY",
+  COMPANY_NAME: "Tên Công Ty",
+  NAME: "Công Ty phi lợi nhuận hoạt động từ thiện Smile Eye Charity (viết tắt là Smile Eye Charity)",
+  THUE: "Mã số thuế",
+  STK: "Số tài khoản",
+  TIME: "GIỜ LÀM VIỆC",
+  TIME_DETAIL: "Từ thứ 2 đến thứ 7: 8h30-17h30",
+  HELP: "Hỗ trợ 24/7",
 };
 
 export default FIXED_VIETNAMESE_WORD;
