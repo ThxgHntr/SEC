@@ -22,6 +22,7 @@ const FIXED_ENGLISH_WORD = {
   PROGRESS: "Progress",
   PROJECT_NAME:
     "DEVELOPMENT OF NEW PA-CANG RESIDENTIAL CLUSTER, PA ONG VILLAGE, CA DY COMMUNE, NAM GIANG DISTRICT",
+  ADDRESSS: "Adress",
   LOCATION: "Cà-Dy commune, Nam Giang disctrict, Quảng Nam province",
   BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR: "Be the Contributor or Sponsor",
   DETAILS: "Details",
@@ -57,6 +58,17 @@ const FIXED_ENGLISH_WORD = {
   A4: "Thank you for your sincere support and cooperation. Please call 0962 414 125 or email dinhdongphuong@gmail.com to Ms. Phuong for all information of the projects.",
   A5: `Each project program has detail content posted on the website. If the program needs financial support, please contact us by email dinhdongphuong@gmail.com or phone number 0962 414 125. You can also transfer money to Smile Eye Charity's account.
   Account number: 020166669999, MB bank, Smile Eye Charity`,
+
+  //Footer
+  INFO: "COMPANY INFORMATION",
+  COMPANY_NAME: "Company name",
+  NAME: "Smile Eye Charity non-profit company (abbreviated as Smile Eye Charity)",
+  THUE: "Tax registration number",
+  STK: "Bank account number",
+  TIME: "WORKING TIME",
+  TIME_DETAIL: "From Monday to Saturday: 8h30-17h30",
+  HELP: "24/7 Support",
+
 };
 
 export default FIXED_ENGLISH_WORD;

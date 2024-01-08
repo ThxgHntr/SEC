@@ -69,7 +69,7 @@ export default function Home() {
                 loading="lazy"
               ></iframe>
             </div>
-            <Footer />
+            <Footer t={t} />
           </div>
         </div>
       </div>
