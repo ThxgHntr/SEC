@@ -2,14 +2,14 @@ const FIXED_VIETNAMESE_WORD = {
   // Navbar Vietnamese
   PROJECT: "Dự án",
   ACHIEVEMENT: "Thành tựu",
-  BLOG: "Blog",
+  BLOG: "BLOGS",
   QACONTACT: "Q&A & Liên hệ",
-  SPONSORS: "Đối tác",
-
-  //
-  INCOMING_PROJECTS: "Các dự án sắp tới",
-  CONTRIBUTORS: "Người tham gia",
-  CONTACT: "Liên hệ",
+  SPONSORS: "NHÀ TÀI TRỢ",
+  INCOMING_PROJECTS: "CÁC DỰ ÁN SẮP TỚI",
+  CONTRIBUTORS: "NHỮNG NGƯỜI ĐÓNG GÓP",
+  CONTACT: "LIÊN HỆ",
+  VOLUNTEERS: "TÌNH NGUYỆN VIÊN",
+  FOUNDER: "NHÀ SÁNG LẬP",
   PROGRESS: "Tiến độ",
   ADDRESSS: "Địa chỉ",
   LOCATION: "Xã Cà-Dy, huyện Nam Giang, tỉnh Quảng Nam",

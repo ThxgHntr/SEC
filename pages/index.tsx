@@ -58,7 +58,7 @@ export default function Home() {
               <Content setModalIsOpen={setIsOpen} t={t} />
               <Completed />
               <Blog />
-              <Contributors />
+              <Contributors t={t} />
               <AboutPage t={t} />
               <iframe
                 className="mx-auto p-2 w-full max-w-7xl"

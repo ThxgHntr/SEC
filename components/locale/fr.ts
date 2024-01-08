@@ -8,11 +8,13 @@ const FIXED_FRANCAIS_WORD = {
   PROJECT2_DETAILS:
     "Organic fertilizer is an important ingredient that determines crop quality and yield. The project aims to reuse domestic, livestock, poultry and agricultural waste as a source of manure; collected in and near the surrounding village. Gaining the knowledge and technology to apply the means for organic fertilizer from waste products will supply the manure to the village gardens and farms. Learning the process of such can also allow the means to run a small-scale business with an organic fertilizer factory within the village. As a result, people would not only understand the process of such from waste, but also have quality fertilizer for their gardens at low cost. The people could also learn the process of running a business in the village. In addition, it contributes to making the environment in the village green and clean.",
   ACHIEVEMENT: "Achievements",
-  BLOG: "Blog",
-  INCOMING_PROJECTS: "Incoming Projects",
-  CONTRIBUTORS: "Contributors",
-  CONTACT: "Contact",
-  SPONSORS: "Sponsors",
+  BLOG: "BLOGUES",
+  INCOMING_PROJECTS: "PROJETS ENTRANTS",
+  CONTRIBUTORS: "CONTRIBUTORS",
+  CONTACT: "CONTACTEZ",
+  VOLUNTEERS: "BÉNÉVOLES",
+  SPONSORS: "SPONSORS",
+  FOUNDER: "FONDATRICE",
   QACONTACT: "Q&A & Contact",
   PROGRESS: "Progress",
   PROJECT_NAME:
