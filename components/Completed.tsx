@@ -1,5 +1,6 @@
 import CardCompleted from "./CardCompleted";
 import CardMore from "./CardMore";
+
 interface Props {
   t: any;
 }

@@ -57,7 +57,7 @@ export default function Home() {
               <Homepage setModalIsOpen={setIsOpen} t={t} />
               <Content setModalIsOpen={setIsOpen} t={t} />
               <Completed t={t} />
-              <Blog />
+              <Blog t={t} />
               <Contributors t={t} />
               <AboutPage t={t} />
               <iframe

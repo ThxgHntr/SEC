@@ -2,9 +2,11 @@ const FIXED_VIETNAMESE_WORD = {
   // Navbar Vietnamese
   PROJECT: "Dự án",
   ACHIEVEMENT: "Thành tựu",
-  BLOG: "BLOGS",
+  BLOGS: "Blogs",
+  BLOGS_CAP: "BLOGS",
   QACONTACT: "Q&A & Liên hệ",
-  SPONSORS: "NHÀ TÀI TRỢ",
+  SPONSORS: "Nhà tài trợ",
+  SPONSORS_CAP: "NHÀ TÀI TRỢ",
   INCOMING_PROJECTS: "CÁC DỰ ÁN SẮP TỚI",
   COMPLETED_PROJECTS: "CÁC DỰ ÁN ĐÃ HOÀN THÀNH",
   CONTRIBUTORS: "NHỮNG NGƯỜI ĐÓNG GÓP",
