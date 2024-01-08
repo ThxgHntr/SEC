@@ -12,7 +12,10 @@ const FIXED_FRANCAIS_WORD = {
   INCOMING_PROJECTS: "Incoming Projects",
   CONTRIBUTORS: "Contributors",
   CONTACT: "Contact",
+  CONTACT_US: "Contactez-nous",
+  VOLUNTEERS: "Bénévoles",
   SPONSORS: "Sponsors",
+  FOUNDER: "Fondatrice",
   QACONTACT: "Q&A & Contact",
   PROGRESS: "Progress",
   PROJECT_NAME:

@@ -1,16 +1,21 @@
 import CardVolunteer from "./CardVolunteer";
 import CardSponsors from "./CardSponsors";
 import Image from "next/image";
-import Url from "../public/founder.jpg";
+import urlFounder from "../public/founder.jpg";
+import urlContributor from "../public/contributor.png";
 
-const Contributors = () => {
+interface Props {
+  t: any;
+}
+
+const Contributors = (props: Props) => {
   return (
     <div className="mx-auto my-0 w-full max-w-7xl z-0">
       <p className="text-4xl font-bold text-center my-5 pt-10">
-        Contributors
+        {props.t.CONTRIBUTORS}
       </p>
       <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded"></hr>
-      <p className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">VOLUNTEERS</p>
+      <p className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">{props.t.VOLUNTEERS}</p>
       <div className="flex flex-col gap-4 m-12">
         <div className="flex flex-row gap-2">
           <CardVolunteer />
@@ -24,7 +29,7 @@ const Contributors = () => {
         </div>
       </div>
       <p className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">
-        SPONSORS
+        {props.t.SPONSORS}
       </p>
       <div className="flex flex-row gap-4 m-12" id="sponsors">
         <CardSponsors />
@@ -32,7 +37,7 @@ const Contributors = () => {
         <CardSponsors />
         <CardSponsors />
       </div>
-      <p className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">FOUNDER</p>
+      <p className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">{props.t.CONTRIBUTORS}</p>
       <div className="m-3">
         <a
           className="flex flex-row items-center"
@@ -40,7 +45,37 @@ const Contributors = () => {
           <Image
             className="object-cover rounded-lg"
             style={{ objectFit: "cover", width: "30%", height: "100%" }}
-            src={Url}
+            src={urlContributor}
+            alt=""
+          />
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h2 className="mb-2 text-4xl font-bold tracking-tight">
+              Gérard Kucharski
+            </h2>
+            <p className="mb-3 font-normal text-sm">
+              Email : Kucger07@gmail.com
+            </p>
+            <p className="mb-3 font-normal">
+              I have decided to join this project to experience many activities which I have never experienced before. Like many of us, I like something challenging and contributive to people and environment. I have joined many activities such as gardening, planting, cooking, etc. and they are very interesting. I feel more confident, braver, and happier after I join this project. I feel love myself more, and understand people more.
+            </p>
+            <p className="mb-3 font-normal">
+              I have joined many activities with the founder, Ms. Phuong. We have mentored children who are afraid of water so that they can get familiar with water and be able to swim.  We joined English classes to help children who are afraid of speaking English so that they feel happy with playing and communicating.
+            </p>
+            <p className="mb-3 font-normal">
+              This organization is a small structure that uses the funds raised in full to help people directly. The whole project is planed for 5 years including many small projects to improve living standard and life skills for these villagers. It develops the existing know-how, respect for the environment, collective and personal development, sharing, etc. It's a wonderful project that I invite you to join, to share, to give hope to all these people these men these women their children to this magnificent village.
+            </p>
+          </div>
+        </a>
+      </div>
+      <p className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">{props.t.FOUNDER}</p>
+      <div className="m-3">
+        <a
+          className="flex flex-row items-center"
+        >
+          <Image
+            className="object-cover rounded-lg"
+            style={{ objectFit: "cover", width: "30%", height: "100%" }}
+            src={urlFounder}
             alt=""
           />
           <div className="flex flex-col justify-between p-4 leading-normal">

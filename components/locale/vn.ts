@@ -4,12 +4,13 @@ const FIXED_VIETNAMESE_WORD = {
   ACHIEVEMENT: "Thành tựu",
   BLOG: "Blog",
   QACONTACT: "Q&A & Liên hệ",
-  SPONSORS: "Đối tác",
-
-  //
+  SPONSORS: "Nhà tài trợ",
   INCOMING_PROJECTS: "Các dự án sắp tới",
   CONTRIBUTORS: "Người tham gia",
   CONTACT: "Liên hệ",
+  CONTACT_US: "Liên hệ cho chúng tôi",
+  VOLUNTEERS: "Tình nguyện viên",
+  FOUNDER: "Nhà sáng lập",
   PROGRESS: "Tiến độ",
   LOCATION: "Xã Cà-Dy, huyện Nam Giang, tỉnh Quảng Nam",
   BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR: "Trở thành người tham gia hoặc đối tác",

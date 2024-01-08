@@ -12,7 +12,10 @@ const FIXED_ENGLISH_WORD = {
   INCOMING_PROJECTS: "Incoming Projects",
   CONTRIBUTORS: "Contributors",
   CONTACT: "Contact",
+  CONTACT_US: "Contact us",
+  VOLUNTEERS: "Volunteers",
   SPONSORS: "Sponsors",
+  FOUNDER: "Founder",
   QACONTACT: "Q&A & Contact",
   PROGRESS: "Progress",
   PROJECT_NAME:
