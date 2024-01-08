@@ -10,7 +10,7 @@ const CardVolunteer = () => {
         src={Url}
         alt=""
       />
-      <div className="flex flex-col gap-2 m-2 justify-between leading-normal">
+      <div className="flex flex-col gap-2 m-2 justify-start lg:justify-between leading-normal">
         <p className="text-2xl font-bold tracking-tight">
           Noteworthy technology acquisitions 2021
         </p>

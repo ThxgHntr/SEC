@@ -33,3 +33,17 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.image_Contributors {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .image_Contributors {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+}

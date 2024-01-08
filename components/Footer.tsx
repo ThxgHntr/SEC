@@ -6,7 +6,7 @@ interface Props {
 const Footer = (props: Props) => {
   return (
     <div className="bg-emerald-600 w-full h-auto  flex flex-col justify-between mt-5 items-center">
-      <div className=" px-5 md:px-10 lg:px-20 xl:px-36 2xl:px-48 text-white flex flex-row w-full justify-center gap-5 items-start py-2 ">
+      <div className=" px-5 md:px-10 lg:px-20 xl:px-36 2xl:px-48 text-white flex flex-col md:flex-row w-full justify-center gap-5 items-start py-2 ">
         <div className="flex flex-col gap-5 max-w-xs w-full my-5">
           <div className="text-center">
             <a className="flex flex-row items-center gap-5 mx-5" href="#">

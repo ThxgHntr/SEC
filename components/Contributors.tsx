@@ -15,14 +15,16 @@ const Contributors = (props: Props) => {
         {props.t.CONTRIBUTORS}
       </p>
       <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded"></hr>
-      <p className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">{props.t.VOLUNTEERS}</p>
+      <p className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">
+        {props.t.VOLUNTEERS}
+      </p>
       <div className="flex flex-col gap-4 m-12">
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-col lg:flex-row gap-2">
           <CardVolunteer />
           <CardVolunteer />
           <CardVolunteer />
         </div>
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-col lg:flex-row gap-2">
           <CardVolunteer />
           <CardVolunteer />
           <CardVolunteer />
@@ -31,20 +33,29 @@ const Contributors = (props: Props) => {
       <p className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">
         {props.t.SPONSORS}
       </p>
-      <div className="flex flex-row gap-4 m-12" id="sponsors">
+      <div className="lg:flex flex-row gap-4 m-12 hidden" id="sponsors">
         <CardSponsors />
         <CardSponsors />
         <CardSponsors />
         <CardSponsors />
       </div>
-      <p className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">{props.t.CONTRIBUTORS}</p>
+      <div className="flex flex-col lg:hidden">
+        <div className="flex flex-row justify-center gap-4 m-4 " id="sponsors">
+          <CardSponsors />
+          <CardSponsors />
+        </div>
+        <div className="flex flex-row justify-center gap-4 m-4 " id="sponsors">
+          <CardSponsors />
+          <CardSponsors />
+        </div>
+      </div>
+      <p className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">
+        {props.t.CONTRIBUTORS}
+      </p>
       <div className="m-3">
-        <a
-          className="flex flex-row items-center"
-        >
+        <a className="flex flex-col md:flex-row justify-between m-3 items-center">
           <Image
-            className="object-cover rounded-lg"
-            style={{ objectFit: "cover", width: "30%", height: "100%" }}
+            className="object-cover rounded-lg image_Contributors"
             src={urlContributor}
             alt=""
           />
@@ -56,25 +67,41 @@ const Contributors = (props: Props) => {
               Email : Kucger07@gmail.com
             </p>
             <p className="mb-3 font-normal">
-              I have decided to join this project to experience many activities which I have never experienced before. Like many of us, I like something challenging and contributive to people and environment. I have joined many activities such as gardening, planting, cooking, etc. and they are very interesting. I feel more confident, braver, and happier after I join this project. I feel love myself more, and understand people more.
+              I have decided to join this project to experience many activities
+              which I have never experienced before. Like many of us, I like
+              something challenging and contributive to people and environment.
+              I have joined many activities such as gardening, planting,
+              cooking, etc. and they are very interesting. I feel more
+              confident, braver, and happier after I join this project. I feel
+              love myself more, and understand people more.
             </p>
             <p className="mb-3 font-normal">
-              I have joined many activities with the founder, Ms. Phuong. We have mentored children who are afraid of water so that they can get familiar with water and be able to swim.  We joined English classes to help children who are afraid of speaking English so that they feel happy with playing and communicating.
+              I have joined many activities with the founder, Ms. Phuong. We
+              have mentored children who are afraid of water so that they can
+              get familiar with water and be able to swim. We joined English
+              classes to help children who are afraid of speaking English so
+              that they feel happy with playing and communicating.
             </p>
             <p className="mb-3 font-normal">
-              This organization is a small structure that uses the funds raised in full to help people directly. The whole project is planed for 5 years including many small projects to improve living standard and life skills for these villagers. It develops the existing know-how, respect for the environment, collective and personal development, sharing, etc. It's a wonderful project that I invite you to join, to share, to give hope to all these people these men these women their children to this magnificent village.
+              This organization is a small structure that uses the funds raised
+              in full to help people directly. The whole project is planed for 5
+              years including many small projects to improve living standard and
+              life skills for these villagers. It develops the existing
+              know-how, respect for the environment, collective and personal
+              development, sharing, etc. It&apos;s a wonderful project that I
+              invite you to join, to share, to give hope to all these people
+              these men these women their children to this magnificent village.
             </p>
           </div>
         </a>
       </div>
-      <p className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">{props.t.FOUNDER}</p>
+      <p className="text-4xl font-bold text-start w-fit my-5 pt-10 pb-3 border-b border-b-xanh-le">
+        {props.t.FOUNDER}
+      </p>
       <div className="m-3">
-        <a
-          className="flex flex-row items-center"
-        >
+        <a className="flex flex-col md:flex-row items-center">
           <Image
-            className="object-cover rounded-lg"
-            style={{ objectFit: "cover", width: "30%", height: "100%" }}
+            className="object-cover rounded-lg image_Contributors"
             src={urlFounder}
             alt=""
           />
@@ -83,23 +110,22 @@ const Contributors = (props: Props) => {
               Đinh Thị Đông Phương
             </h2>
             <p className="mb-3 font-normal">
-              PHD. chuyên ngành công nghệ thông tin, Nhật Bản BA chuyên ngành
-              sư phạm toán tin, tâm lý, giáo dục
+              PHD. chuyên ngành công nghệ thông tin, Nhật Bản BA chuyên ngành sư
+              phạm toán tin, tâm lý, giáo dục
             </p>
             <p className="mb-3 font-normal">
-              Tôi được sinh ra và lớn lên ở 1 vùng quê tỉnh Quảng Nam. Tuổi
-              thơ của tôi đầy ắp những trải nghiệm với tự nhiên và đầy tình
-              yêu thương. Tôi và đám bạn trẻ con chơi đủ thứ trò, nào là trốn
-              tìm, bắn trổng, bắn bi, chơi kèn lá, chơi ô quan, nhảy dây, đan
-              lờ bắt cá bắt cua, leo cây hái trái, vào hang bắt dơi, etc. Bố
-              tôi là giáo viên nhưng ông cũng là nông dân rất giỏi. Ngoài giờ
-              làm việc, ông làm đủ thứ. Vỡ đất trồng lúa, chăn nuôi, nấu rượu,
-              làm bún, làm mì, cắt tóc, sửa xe, làm nhà, etc. Mẹ tôi cũng là
-              giáo viên, và bà cũng làm đủ thứ ngoài giờ. Bà làm thuốc nam,
-              dạy thêm, buôn bán, etc. Bố mẹ tôi luôn hỗ trơ nhau khi làm
-              việc. Tôi theo chân bố, chân mẹ trong hầu hết các công việc của
-              ông bà nên tôi được trải nghiệm và học hỏi rất nhiều điều thú
-              vị.
+              Tôi được sinh ra và lớn lên ở 1 vùng quê tỉnh Quảng Nam. Tuổi thơ
+              của tôi đầy ắp những trải nghiệm với tự nhiên và đầy tình yêu
+              thương. Tôi và đám bạn trẻ con chơi đủ thứ trò, nào là trốn tìm,
+              bắn trổng, bắn bi, chơi kèn lá, chơi ô quan, nhảy dây, đan lờ bắt
+              cá bắt cua, leo cây hái trái, vào hang bắt dơi, etc. Bố tôi là
+              giáo viên nhưng ông cũng là nông dân rất giỏi. Ngoài giờ làm việc,
+              ông làm đủ thứ. Vỡ đất trồng lúa, chăn nuôi, nấu rượu, làm bún,
+              làm mì, cắt tóc, sửa xe, làm nhà, etc. Mẹ tôi cũng là giáo viên,
+              và bà cũng làm đủ thứ ngoài giờ. Bà làm thuốc nam, dạy thêm, buôn
+              bán, etc. Bố mẹ tôi luôn hỗ trơ nhau khi làm việc. Tôi theo chân
+              bố, chân mẹ trong hầu hết các công việc của ông bà nên tôi được
+              trải nghiệm và học hỏi rất nhiều điều thú vị.
             </p>
             <p className="mb-3 font-normal">
               Tôi vào đại học, đi làm, rồi đi du học và làm việc ở Nhật từ năm
@@ -107,21 +133,21 @@ const Contributors = (props: Props) => {
               Nhật, từ trồng lúa trồng khoai trồng rau nấu ăn làm bánh nướng
               thịt cắm trại ngoài trời diễn tập phòng cháy chữa cháy, etc đến
               làm quản lý dự án IT, làm tiến sĩ, làm giảng viên của đại học
-              Ritsumeikan. Những người bạn vừa có kỹ năng cao trong lĩnh vực
-              họ yêu thích, có kỹ năng xử lý vấn đề rất nhạy bén, và đầy tình
-              yêu thương. Tình yêu thương của người thân, bạn bè giúp tôi phát
-              triển trí tuệ, chữa lành những tổn thương, và trưởng thành qua
-              các trải nghiệm thực tế. Tôi được chữa lành, trở nên tự tin lạc
-              quan yêu đời yêu người, yêu cuộc sống này vô cùng.
+              Ritsumeikan. Những người bạn vừa có kỹ năng cao trong lĩnh vực họ
+              yêu thích, có kỹ năng xử lý vấn đề rất nhạy bén, và đầy tình yêu
+              thương. Tình yêu thương của người thân, bạn bè giúp tôi phát triển
+              trí tuệ, chữa lành những tổn thương, và trưởng thành qua các trải
+              nghiệm thực tế. Tôi được chữa lành, trở nên tự tin lạc quan yêu
+              đời yêu người, yêu cuộc sống này vô cùng.
             </p>
             <p className="mb-3 font-normal">
-              Tôi hiểu ra rằng, mỗi khi tôi tham gia hoạt động gì đó để giúp
-              đỡ người khác, tôi không những phát triển trí tuệ và còn được
-              chữa lành. Tình yêu thương trong tôi lớn thêm. Tôi thêm yêu con
-              người và yêu cuộc sống này. Đây quả thực là điều kì diệu. Càng
-              giúp người, chúng ta càng phát triển trí tuệ và càng hạnh phúc
-              hơn. Hãy tham gia dự án để trải nghiệm những điều kỳ diệu này
-              với chúng tôi.
+              Tôi hiểu ra rằng, mỗi khi tôi tham gia hoạt động gì đó để giúp đỡ
+              người khác, tôi không những phát triển trí tuệ và còn được chữa
+              lành. Tình yêu thương trong tôi lớn thêm. Tôi thêm yêu con người
+              và yêu cuộc sống này. Đây quả thực là điều kì diệu. Càng giúp
+              người, chúng ta càng phát triển trí tuệ và càng hạnh phúc hơn. Hãy
+              tham gia dự án để trải nghiệm những điều kỳ diệu này với chúng
+              tôi.
             </p>
           </div>
         </a>

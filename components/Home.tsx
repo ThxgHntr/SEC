@@ -44,10 +44,10 @@ const Homepage = (props: Props) => {
   };
   return (
     <div className="mx-auto p-2 w-full max-w-7xl">
-      <p className="text-5xl font-bold text-center mb-3">
+      <p className="text-3xl lg:text-5xl xl:text-5xl 2xl:text-5xl font-bold text-center mb-3">
         {props.t.PROJECT_NAME}
       </p>
-      <div className="flex justify-between">
+      <div className="flex flex-col md:flex-row items-center justify-center md:justify-between mb-3">
         <div className="flex flex-row items-center justify-center order-first gap-2">
           <IoCalendarOutline className="w-10 h-10" />
           <span className="text-2xl">10/2023-10/2024</span>
@@ -58,16 +58,16 @@ const Homepage = (props: Props) => {
           </div>
         </a>
       </div>
-      <div className="shadow-2xl bg-white rounded-lg mt-5 my-3">
-        <div className="flex flex-row gap-3">
+      <div className="shadow-2xl bg-white rounded-lg mt-5 my-3 md:flex md:gap-3">
+        <div className="flex flex-col gap-3 md:flex-row">
           <iframe
-            className="w-10/12 rounded-l-lg"
+            className="w-full md:w-10/12 rounded-l-lg mb-3 md:mb-0 md:order-first"
             height="full"
             src={props.t.PROGRAM_SRC}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
-          <div className="flex flex-col justify-between gap-4 p-4 w-7/12">
+          <div className="flex flex-col justify-between gap-4 p-4 w-full md:w-7/12">
             <p className="text-2xl">{props.t.DESCRIPTION}</p>
             <div
               onClick={copyLink}
@@ -115,10 +115,7 @@ const Homepage = (props: Props) => {
                 </div>
               </div>
             </div>
-            <button
-              // onClick={() => props.setModalIsOpen(true)}
-              className="bg-hong-bede rounded-lg p-2 font-bold hover:bg-hong-bede/[0.75]"
-            >
+            <button className="bg-hong-bede rounded-lg p-2 font-bold hover:bg-hong-bede/[0.75]">
               <a href="#QA">
                 <div>{props.t.BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR}</div>
               </a>
