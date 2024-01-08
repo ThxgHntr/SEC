@@ -12,7 +12,6 @@ const FIXED_JAPANESE_WORD = {
   INCOMING_PROJECTS: "入ってくるプロジェクト",
   CONTRIBUTORS: "コントリビューター",
   CONTACT: "接触",
-  CONTACT_US: "お問い合わせ",
   VOLUNTEERS: "ボランティア",
   SPONSORS: "スポンサー",
   FOUNDER: "創設者",

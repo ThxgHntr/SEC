@@ -50,14 +50,14 @@ const AboutPage = (props: Props) => {
         </div>
       </div>
 
-      <p className="text-4xl font-bold text-center my-5 pt-10">Q & A</p>
+      <p className="text-4xl font-bold text-center my-5 pt-10">Q&aA</p>
       <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded"></hr>
       <div className="flex flex-col items-center gap-2 m-3" id="QA">
         <QA t={props.t} />
       </div>
 
       <p className="text-4xl font-bold text-center my-5 pt-10">
-        {props.t.CONTACT_US}
+        {props.t.CONTACT}
       </p>
       <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded"></hr>
       <div className="flex flex-row gap-2 w-full justify-between">
