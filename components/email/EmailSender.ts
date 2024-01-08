@@ -18,7 +18,7 @@ async function sendEmail(options: EmailOptions) {
   });
 
   const mailOptions = {
-    from: 'your-email@gmail.com',
+    from: 'Smile Eyes Charity',
     to: options.to,
     subject: options.subject,
     html: options.html,

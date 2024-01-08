@@ -41,7 +41,7 @@ export default async function handler(
 
             // Send email to admin
             await sendEmail({
-                to: 'recipient@example.com', // Replace with the actual recipient email address
+                to: 'admin@example.com', // Replace with the actual recipient email address
                 subject: 'New Contact Form Submission',
                 html: emailHtmlForAdmin,
             });
