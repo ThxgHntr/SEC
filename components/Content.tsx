@@ -12,7 +12,7 @@ const Content = (props: Props) => {
         {props.t.INCOMING_PROJECTS}
       </p>
       <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded"></hr>
-      <div className="flex flex-row justify-between m-3 gap-10">
+      <div className="flex flex-col md:flex-row justify-between m-3 gap-10">
         <CardProgram
           t={props.t}
           src={props.t.PROJECT1}

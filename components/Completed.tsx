@@ -11,7 +11,7 @@ const Completed = (props: Props) => {
         {props.t.COMPLETED_PROJECTS}
       </h1>
       <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded"></hr>
-      <div className="flex flex-row justify-between m-3 gap-10">
+      <div className="flex flex-col lg:flex-row justify-between m-3 gap-10">
         <div className="w-full h-full shadow-lg bg-white rounded-lg">
           <CardCompleted />
         </div>
