@@ -31,7 +31,7 @@ const Header = (props: props) => {
         </a>
 
         <a className="text-lg pt-1 text-white hover:text-vang-khe" href="#blog">
-          {props.t.BLOG}
+          {props.t.BLOGS}
         </a>
         <a
           className="text-lg pt-1 text-white hover:text-vang-khe"
