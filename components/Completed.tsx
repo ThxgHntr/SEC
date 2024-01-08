@@ -1,11 +1,14 @@
 import CardCompleted from "./CardCompleted";
 import CardMore from "./CardMore";
+interface Props {
+  t: any;
+}
 
-const Completed = () => {
+const Completed = (props: Props) => {
   return (
     <div className="mx-auto p-2 w-full max-w-7xl z-0">
       <h1 className="text-4xl font-bold text-center my-5 pt-10">
-        Completed Projects
+        {props.t.COMPLETED_PROJECTS}
       </h1>
       <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded"></hr>
       <div className="flex flex-row justify-between m-3 gap-10">

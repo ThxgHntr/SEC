@@ -10,6 +10,7 @@ const FIXED_JAPANESE_WORD = {
   ACHIEVEMENT: "成果",
   BLOG: "ブログ",
   INCOMING_PROJECTS: "入ってくるプロジェクト",
+  COMPLETED_PROJECTS: "完了したプロジェクト",
   CONTRIBUTORS: "コントリビューター",
   CONTACT: "接触",
   VOLUNTEERS: "ボランティア",
