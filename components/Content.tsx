@@ -15,6 +15,8 @@ const Content = (props: Props) => {
       <div className="flex flex-col md:flex-row justify-between m-3 gap-10">
         <CardProgram
           t={props.t}
+          details={props.t.DETAILS}
+          plan={props.t.PLAN}
           src={props.t.PROJECT1}
           text={props.t.PROJECT1_DETAILS}
           title={props.t.PROJECT1_NAME}
@@ -25,6 +27,8 @@ const Content = (props: Props) => {
         />
         <CardProgram
           t={props.t}
+          details={props.t.DETAILS}
+          plan={props.t.PLAN}
           src={props.t.PROJECT2}
           text={props.t.PROJECT2_DETAILS}
           title={props.t.PROJECT2_NAME}
