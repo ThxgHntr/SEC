@@ -2,9 +2,12 @@ import { IoCalendarOutline } from "react-icons/io5";
 import { CiShare1 } from "react-icons/ci";
 import { useState } from "react";
 import { IoHeartCircleSharp } from "react-icons/io5";
+import PdfModal from "./PdfModal";
 
 interface Props {
   t: any;
+  details: String;
+  plan: String;
   src: any;
   text: String;
   title?: String;
@@ -15,13 +18,28 @@ interface Props {
 }
 
 const CardProgram = (props: Props) => {
-  const linkCopy = "https://youtu.be/543jwFfCZvg";
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [currentPdf, setCurrentPdf] = useState("");
+  const openModalDetail = () => {
+    setCurrentPdf(props.link);
+    setModalIsOpen(true);
+  };
+
+  const openModalPlan = () => {
+    setCurrentPdf(props.link_plan);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
   const [numLike, setNumLike] = useState(256);
   const [isCopied, setIsCopied] = useState(false);
   const copyLink = () => {
     if (navigator.clipboard) {
       navigator.clipboard
-        .writeText(linkCopy)
+        .writeText(props.src)
         .then(() => {
           setIsCopied(true);
           setTimeout(() => setIsCopied(false), 2000);
@@ -62,12 +80,18 @@ const CardProgram = (props: Props) => {
             )}
           </div>
           <div className="flex flex-row justify-between">
-            <a className="underline" target="_blank" href={props.link}>
-              {props.t.DETAILS}
-            </a>
-            <a target="_blank" href={props.link_plan} className="underline">
-              {props.t.PLAN}
-            </a>
+            <p
+              onClick={openModalDetail}
+              className="font-bold underline hover:cursor-pointer"
+            >
+              {props.details}
+            </p>
+            <p
+              onClick={openModalPlan}
+              className="font-bold underline hover:cursor-pointer"
+            >
+              {props.plan}
+            </p>
             <div className="flex flex-row gap-2">
               <button onClick={() => setNumLike(numLike + 1)}>
                 <IoHeartCircleSharp className="w-6 h-6 text-red-500" />
@@ -99,6 +123,7 @@ const CardProgram = (props: Props) => {
           </div>
         </div>
       </div>
+      <PdfModal isOpen={modalIsOpen} onClose={closeModal} pdfSrc={currentPdf} />
     </div>
   );
 };
