@@ -13,6 +13,7 @@ interface Props {
   title?: String;
   link: any;
   link_plan?: any;
+  link_copy?: any;
   numLike: number;
   setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
@@ -39,7 +40,7 @@ const CardProgram = (props: Props) => {
   const copyLink = () => {
     if (navigator.clipboard) {
       navigator.clipboard
-        .writeText(props.src)
+        .writeText(props.link_copy)
         .then(() => {
           setIsCopied(true);
           setTimeout(() => setIsCopied(false), 2000);
@@ -75,7 +76,7 @@ const CardProgram = (props: Props) => {
             <CiShare1 className=" w-6 h-6 hover:cursor-pointer" />
             {isCopied && (
               <div className="absolute bg-white p-2 rounded-lg border shadow-md bottom-8 left-auto">
-                <p className="text-green-500">Copied!</p>
+                <p className="text-green-500">Link copied to clipboard</p>
               </div>
             )}
           </div>
@@ -102,7 +103,7 @@ const CardProgram = (props: Props) => {
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-4">
               <div className="flex justify-between">
-                <span>Project:</span>
+                <span>{props.t.PROGRESS}:</span>
                 <span>40%</span>
               </div>
               <div className="w-full bg-gray-200 rounded-full h-2.5">

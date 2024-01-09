@@ -13,30 +13,36 @@ const Content = (props: Props) => {
       </p>
       <hr className="max-w-4xl h-0.5 mx-auto my-4 bg-xanh-le border-0 rounded"></hr>
       <div className="flex flex-col md:flex-row justify-between m-3 gap-10">
-        <CardProgram
-          t={props.t}
-          details={props.t.DETAILS}
-          plan={props.t.PLAN}
-          src={props.t.PROJECT1}
-          text={props.t.PROJECT1_DETAILS}
-          title={props.t.PROJECT1_NAME}
-          link={props.t.PROJECT1_LINK}
-          link_plan={props.t.PROJECT_PLAN_LINK}
-          setModalIsOpen={props.setModalIsOpen}
-          numLike={148}
-        />
-        <CardProgram
-          t={props.t}
-          details={props.t.DETAILS}
-          plan={props.t.PLAN}
-          src={props.t.PROJECT2}
-          text={props.t.PROJECT2_DETAILS}
-          title={props.t.PROJECT2_NAME}
-          link={props.t.PROJECT2_LINK}
-          link_plan={props.t.PROJECT_PLAN_LINK}
-          setModalIsOpen={props.setModalIsOpen}
-          numLike={329}
-        />
+        <div className="w-1/2">
+          <CardProgram
+            t={props.t}
+            details={props.t.DETAILS}
+            plan={props.t.PLAN}
+            src={props.t.PROJECT1}
+            text={props.t.PROJECT1_DETAILS}
+            title={props.t.PROJECT1_NAME}
+            link={props.t.PROJECT1_LINK}
+            link_plan={props.t.PROJECT_PLAN_LINK}
+            link_copy={props.t.PROJECT1_COPY}
+            setModalIsOpen={props.setModalIsOpen}
+            numLike={148}
+          />
+        </div>
+        <div className="w-1/2">
+          <CardProgram
+            t={props.t}
+            details={props.t.DETAILS}
+            plan={props.t.PLAN}
+            src={props.t.PROJECT2}
+            text={props.t.PROJECT2_DETAILS}
+            title={props.t.PROJECT2_NAME}
+            link={props.t.PROJECT2_LINK}
+            link_plan={props.t.PROJECT_PLAN_LINK}
+            link_copy={props.t.PROJECT2_COPY}
+            setModalIsOpen={props.setModalIsOpen}
+            numLike={329}
+          />
+        </div>
       </div>
     </div>
   );

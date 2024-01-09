@@ -1,7 +1,7 @@
 const FIXED_JAPANESE_WORD = {
   PROGRAM_SRC: "https://www.youtube.com/embed/aAqwxCyBdRE?si=JMku9plZsV1HDoMQ",
   PROJECT: "プロジェクト",
-  PROJECT1: "https://www.youtube.com/embed/3owMhK2Bkwc?si=H744KBGkzijQb9gc",
+  PROJECT1: "https://www.youtube.com/embed/3owMhK2Bkwc?si=6i5KiXpQqCIR5W8V",
   PROJECT1_DETAILS:
     "コトゥー住民のパキャン村には現在、電気と水が供給されている。人々は自分たちの習慣に従って作物を育てたり家畜を育てたりします。各世帯には 500 平方メートルを超える庭の面積がありますが、ほとんど空き地のままです。現在植物は多くなく、家畜もあまり飼っていません。ここに住むこれらのグループには、園芸と牧畜の技術と技能が理解していません。\nこのプロジェクトは、彼らが家畜を育て、家庭菜園を作るためのスキルとともに実践的な知識を指導することを目的としています。その結果、私たちはコミュニティの生活水準と社会的改善を効果的に向上させることを期待しています。これが、この村のよりクリーンな環境と人々の健康と安全の向上に貢献すると私たちは信じています。",
   PROJECT2: "https://www.youtube.com/embed/1OSXd4xcsyI?si=MfSLA90_aR5SXdAH",
@@ -69,6 +69,8 @@ const FIXED_JAPANESE_WORD = {
   TIME: "営業時間",
   TIME_DETAIL: "月曜日から土曜日: 8h30-17h30",
   HELP: "24/7対応",
+  PROJECT1_COPY: "https://youtu.be/3owMhK2Bkwc",
+  PROJECT2_COPY: "https://youtu.be/1OSXd4xcsyI",
 };
 
 export default FIXED_JAPANESE_WORD;

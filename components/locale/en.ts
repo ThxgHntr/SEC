@@ -68,7 +68,8 @@ const FIXED_ENGLISH_WORD = {
   TIME: "WORKING TIME",
   TIME_DETAIL: "From Monday to Saturday: 8h30-17h30",
   HELP: "24/7 Support",
-
+  PROJECT1_COPY: "https://youtu.be/TKpN7cVX7y8",
+  PROJECT2_COPY: "https://youtu.be/96LUDfTQU0o",
 };
 
 export default FIXED_ENGLISH_WORD;

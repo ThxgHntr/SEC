@@ -76,7 +76,7 @@ const Homepage = (props: Props) => {
               <CiShare1 className=" w-6 h-6 hover:cursor-pointer" />
               {isCopied && (
                 <div className="absolute bg-white p-2 rounded-lg border shadow-md bottom-8 left-auto">
-                  <p className="text-green-500">Copied!</p>
+                  <p className="text-green-500">Link copied to clipboard</p>
                 </div>
               )}
             </div>

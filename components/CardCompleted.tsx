@@ -3,7 +3,11 @@ import { CiShare1 } from "react-icons/ci";
 import { IoHeartCircleSharp } from "react-icons/io5";
 import { useState } from "react";
 
-const CardCompleted = () => {
+interface Props {
+  t: any;
+}
+
+const CardCompleted = (props: Props) => {
   const linkCopy = "https://youtu.be/543jwFfCZvg";
   const [numLike, setNumLike] = useState(256);
   const [isCopied, setIsCopied] = useState(false);
@@ -49,7 +53,7 @@ const CardCompleted = () => {
             <CiShare1 className=" w-6 h-6 hover:cursor-pointer" />
             {isCopied && (
               <div className="absolute bg-white p-2 rounded-lg border shadow-md bottom-8 left-auto">
-                <p className="text-green-500">Copied!</p>
+                <p className="text-green-500">Link copied to clipboard</p>
               </div>
             )}
           </div>
@@ -65,7 +69,7 @@ const CardCompleted = () => {
           </div>
           <div className="flex flex-col gap-4">
             <div className="flex justify-between">
-              <span>Project:</span>
+              <span>{props.t.PROGRESS}:</span>
               <span>100%</span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-2.5">

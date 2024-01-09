@@ -76,6 +76,8 @@ const FIXED_VIETNAMESE_WORD = {
   TIME: "GIỜ LÀM VIỆC",
   TIME_DETAIL: "Từ thứ 2 đến thứ 7: 8h30-17h30",
   HELP: "Hỗ trợ 24/7",
+  PROJECT1_COPY: "https://youtu.be/jKwQ8ork7Bw",
+  PROJECT2_COPY: "https://youtu.be/PaIaf8DhVrQ",
 };
 
 export default FIXED_VIETNAMESE_WORD;
