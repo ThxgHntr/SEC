@@ -40,7 +40,7 @@ export default function Home() {
       <div className="z-20">
         <Modal modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
       </div>
-      <div className="w-full overflow-x-hidden">
+      <div className="w-full overflow-x-hidden md:overflow-x-visible">
         <Head>
           <title>Smile Eyes Charity</title>
           <meta
