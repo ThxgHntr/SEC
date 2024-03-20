@@ -1,14 +1,13 @@
-# SEC - Charity Website
-
-![SEC Logo](https://raw.githubusercontent.com/ThxgHntr/SEC/934b11efda055c9d9a994c4d5e49d45e5203d63d/public/logo.svg).
-
+# SEC - Smile Eyes Charity
+<p align="center">
+    <img src="https://raw.githubusercontent.com/ThxgHntr/SEC/934b11efda055c9d9a994c4d5e49d45e5203d63d/public/logo.svg">
+</p>
 SEC is a charity website aimed at supporting and facilitating charitable projects. We provide a platform for charitable organizations and individuals to create projects, providing detailed descriptions of the objectives and operations of the projects.
 
 ## Key Features
 
 - **Charitable Projects**: Allows organizations and individuals to create charitable projects, detailing the goals and operations of the project.
 - **Support Projects**: Enables users to support charitable projects by providing financial contributions or volunteering.
-- **Account Management**: Provides users with the ability to manage personal information, track contribution history, and interact with projects they have supported.
 
 ## Getting Started
 
