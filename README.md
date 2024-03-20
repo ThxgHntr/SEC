@@ -1,6 +1,6 @@
 # SEC - Charity Website
 
-![SEC Logo]([https://link_to_your_logo.png](https://raw.githubusercontent.com/ThxgHntr/SEC/934b11efda055c9d9a994c4d5e49d45e5203d63d/public/logo.svg))
+![SEC Logo](https://raw.githubusercontent.com/ThxgHntr/SEC/934b11efda055c9d9a994c4d5e49d45e5203d63d/public/logo.svg).
 
 SEC is a charity website aimed at supporting and facilitating charitable projects. We provide a platform for charitable organizations and individuals to create projects, providing detailed descriptions of the objectives and operations of the projects.
 
